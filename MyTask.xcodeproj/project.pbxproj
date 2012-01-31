@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
+		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
+		F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */; };
+		F3FBE93214D79B2800CF86BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3FBE93014D79B2800CF86BA /* InfoPlist.strings */; };
+		F3FBE93414D79B2800CF86BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FBE93314D79B2800CF86BA /* main.m */; };
+		F3FBE93814D79B2800CF86BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FBE93714D79B2800CF86BA /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FBE92714D79B2800CF86BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3FBE92914D79B2800CF86BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3FBE92F14D79B2800CF86BA /* MyTask-Info.plist */ = {isa = PBXFileReference; path = "MyTask-Info.plist"; sourceTree = "<group>"; };
+		F3FBE93114D79B2800CF86BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3FBE93314D79B2800CF86BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3FBE93514D79B2800CF86BA /* MyTask-Prefix.pch */ = {isa = PBXFileReference; path = "MyTask-Prefix.pch"; sourceTree = "<group>"; };
+		F3FBE93614D79B2800CF86BA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3FBE93714D79B2800CF86BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3FBE92014D79B2800CF86BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */,
+				F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */,
+				F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3FBE91814D79B2800CF86BA = {
+			isa = PBXGroup;
+			children = (
+				F3FBE92D14D79B2800CF86BA /* MyTask */,
+				F3FBE92614D79B2800CF86BA /* Frameworks */,
+				F3FBE92414D79B2800CF86BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3FBE92414D79B2800CF86BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBE92314D79B2800CF86BA /* MyTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3FBE92614D79B2800CF86BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBE92714D79B2800CF86BA /* UIKit.framework */,
+				F3FBE92914D79B2800CF86BA /* Foundation.framework */,
+				F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBE93614D79B2800CF86BA /* AppDelegate.h */,
+				F3FBE93714D79B2800CF86BA /* AppDelegate.m */,
+				F3FBE92E14D79B2800CF86BA /* Supporting Files */,
+			);
+			path = MyTask;
+			sourceTree = "<group>";
+		};
+		F3FBE92E14D79B2800CF86BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBE92F14D79B2800CF86BA /* MyTask-Info.plist */,
+				F3FBE93014D79B2800CF86BA /* InfoPlist.strings */,
+				F3FBE93314D79B2800CF86BA /* main.m */,
+				F3FBE93514D79B2800CF86BA /* MyTask-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3FBE92214D79B2800CF86BA /* MyTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FBE93B14D79B2800CF86BA /* Build configuration list for PBXNativeTarget "MyTask" */;
+			buildPhases = (
+				F3FBE91F14D79B2800CF86BA /* Sources */,
+				F3FBE92014D79B2800CF86BA /* Frameworks */,
+				F3FBE92114D79B2800CF86BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTask;
+			productName = MyTask;
+			productReference = F3FBE92314D79B2800CF86BA /* MyTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3FBE91A14D79B2800CF86BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F3FBE91D14D79B2800CF86BA /* Build configuration list for PBXProject "MyTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3FBE91814D79B2800CF86BA;
+			productRefGroup = F3FBE92414D79B2800CF86BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3FBE92214D79B2800CF86BA /* MyTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3FBE92114D79B2800CF86BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FBE93214D79B2800CF86BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3FBE91F14D79B2800CF86BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FBE93414D79B2800CF86BA /* main.m in Sources */,
+				F3FBE93814D79B2800CF86BA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3FBE93014D79B2800CF86BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FBE93114D79B2800CF86BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3FBE93914D79B2800CF86BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3FBE93A14D79B2800CF86BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3FBE93C14D79B2800CF86BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
+				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3FBE93D14D79B2800CF86BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
+				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3FBE91D14D79B2800CF86BA /* Build configuration list for PBXProject "MyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FBE93914D79B2800CF86BA /* Debug */,
+				F3FBE93A14D79B2800CF86BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FBE93B14D79B2800CF86BA /* Build configuration list for PBXNativeTarget "MyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FBE93C14D79B2800CF86BA /* Debug */,
+				F3FBE93D14D79B2800CF86BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3FBE91A14D79B2800CF86BA /* Project object */;
+}
