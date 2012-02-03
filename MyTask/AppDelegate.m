@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AuthenticationController.h"
 
 @implementation AppDelegate
 
@@ -17,6 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    AuthenticationController *authenticationController=[[AuthenticationController alloc] initWithNibName:@"AuthenticationController" bundle:nil];
+    self.window.rootViewController=authenticationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
