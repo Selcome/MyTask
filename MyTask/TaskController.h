@@ -11,8 +11,9 @@
 
 @interface TaskController : UIViewController{
     __weak IBOutlet UIView *subViewContainer;
-    __weak IBOutlet TaskDetailTableView *taskDetailView;
-    __weak IBOutlet UITableViewCell *taskDetailViewCell;
+    IBOutlet TaskDetailTableView *taskDetailView;
+    IBOutlet UITableView *commentView;
+    IBOutlet UITableView *childTaskView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString *) theTitle;

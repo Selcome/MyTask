@@ -24,32 +24,32 @@
 }
 
 - (IBAction)switchSubView:(id)sender {
-//    UISegmentedControl *segment=(UISegmentedControl *)sender;
-//    switch ([segment selectedSegmentIndex]) {
-//        case 0:
-//            if(currentSubView!=detailView){
-//                [currentSubView removeFromSuperview];
-//                currentSubView=detailView;
-//                [subViewsContainer addSubview:detailView];
-//            }
-//            break;
-//        case 1:
-//            if(currentSubView!=commentView){
-//                [currentSubView removeFromSuperview];
-//                currentSubView=commentView;
-//                [subViewsContainer addSubview:commentView];
-//            }
-//            break;
-//        case 2:
-//            if(currentSubView!=childTasksView){
-//                [currentSubView removeFromSuperview];
-//                currentSubView=childTasksView;
-//                [subViewsContainer addSubview:childTasksView];
-//            }
-//            break;
-//        default:
-//            break;
-//    }
+    UISegmentedControl *segment=(UISegmentedControl *)sender;
+    switch ([segment selectedSegmentIndex]) {
+        case 0:
+            if(currentSubView!=taskDetailView){
+                [currentSubView removeFromSuperview];
+                currentSubView=taskDetailView;
+                [subViewContainer addSubview:taskDetailView];
+            }
+            break;
+        case 1:
+            if(currentSubView!=commentView){
+                [currentSubView removeFromSuperview];
+                currentSubView=commentView;
+                [subViewContainer addSubview:commentView];
+            }
+            break;
+        case 2:
+            if(currentSubView!=childTaskView){
+                [currentSubView removeFromSuperview];
+                currentSubView=childTaskView;
+                [subViewContainer addSubview:childTaskView];
+            }
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,7 +75,8 @@
 {
     subViewContainer = nil;
     taskDetailView = nil;
-    taskDetailViewCell = nil;
+    commentView = nil;
+    childTaskView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
