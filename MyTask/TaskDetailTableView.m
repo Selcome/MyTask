@@ -26,7 +26,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -35,6 +35,22 @@
     //return [taskDetails count];
     return 2;
 }
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSString *sectionName=nil;
+    switch (section) {
+        case 0:
+            sectionName=@"今天";
+            break;
+        case 1:
+            sectionName=@"昨天";
+            break;
+        default:
+            break;
+    }
+    return sectionName;
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

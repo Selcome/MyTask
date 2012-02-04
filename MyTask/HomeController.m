@@ -9,7 +9,32 @@
 #import "HomeController.h"
 #import "TaskController.h"
 
+@interface HomeController()
+-(void)setUserImage;
+@end
+
 @implementation HomeController
+
+-(void)setUserImage{
+    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory
+                                                       , NSUserDomainMask 
+                                                       , YES); 
+    NSString *newImagePath=[[paths objectAtIndex:0] stringByAppendingPathComponent:@"sullivan_new.png"]; 
+    
+    
+    NSString *imagePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"sullivan.png"];
+    
+    NSLog(@"set user image: %@",[NSURL fileURLWithPath:imagePath]);
+    
+    
+    [[NSFileManager defaultManager] copyItemAtURL:[NSURL fileURLWithPath:imagePath] toURL:[NSURL fileURLWithPath:newImagePath] error:nil];
+    
+    //userImage.image=[UIImage imageNamed:@"sullivan.png"];
+    userImage.image=[UIImage imageWithContentsOfFile:newImagePath];
+    
+    NSLog(@"set user image: %@",imagePath);
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,10 +60,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.title=@"怪兽电力公司";
+    
+    [self setUserImage];
 }
 
 - (void)viewDidUnload
 {
+    userImage = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

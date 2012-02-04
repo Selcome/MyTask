@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeController : UIViewController{
+    __weak IBOutlet UIImageView *userImage;
 }
 - (IBAction)gotoAction:(id)sender;
 
