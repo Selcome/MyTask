@@ -7,6 +7,7 @@
 //
 
 #import "HomeController.h"
+#import "TaskController.h"
 
 @implementation HomeController
 
@@ -54,4 +55,38 @@
     return YES;
 }
 
+- (IBAction)gotoAction:(id)sender {
+    UIButton *button=(UIButton *)sender;
+    int tag=button.tag;
+    
+    switch (tag) {
+        case 1:
+            NSLog(@"当前活动");
+            self.tabBarController.selectedIndex=1;
+            break;
+        case 2:
+            NSLog(@"搜索");
+            self.tabBarController.selectedIndex=3;
+            break;
+        case 3:
+            NSLog(@"日历");
+            break;
+        case 4:
+        {
+            NSLog(@"我的任务");
+            
+            TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:@"我的任务"];
+            [self.navigationController pushViewController:taskController animated:YES];
+            break;
+        }
+        case 5:
+            NSLog(@"工作区");
+            break;
+        case 6:
+            NSLog(@"设置");
+            break;
+        default:
+            break;
+    }
+}
 @end

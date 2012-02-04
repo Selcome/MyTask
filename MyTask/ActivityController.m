@@ -7,6 +7,7 @@
 //
 
 #import "ActivityController.h"
+#import "TaskController.h"
 
 @implementation ActivityController{
     NSArray *activitys;
@@ -164,6 +165,10 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    NSLog(@"selected:%i",[indexPath row]);
+    TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:[activitys objectAtIndex:[indexPath row]]];
+    [self.navigationController pushViewController:taskController animated:YES];
 }
 
 @end

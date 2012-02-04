@@ -10,5 +10,6 @@
 
 @interface HomeController : UIViewController{
 }
+- (IBAction)gotoAction:(id)sender;
 
 @end
