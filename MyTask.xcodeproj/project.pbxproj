@@ -12,6 +12,7 @@
 		F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */; };
 		F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */; };
 		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
+		F380C00914DE4FB700880B96 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F380C00814DE4FB700880B96 /* DataManager.m */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
 		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
 		F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */; };
@@ -52,6 +53,8 @@
 		F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableView.m; sourceTree = "<group>"; };
 		F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
 		F380C00414DD2B4800880B96 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
+		F380C00714DE4FB700880B96 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		F380C00814DE4FB700880B96 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBE92714D79B2800CF86BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3FBE92914D79B2800CF86BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,15 @@
 			name = task;
 			sourceTree = "<group>";
 		};
+		F380C00614DE46AE00880B96 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F380C00714DE4FB700880B96 /* DataManager.h */,
+				F380C00814DE4FB700880B96 /* DataManager.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		F3FBE91814D79B2800CF86BA = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				F380C00614DE46AE00880B96 /* data */,
 				F32EED4314DBC6C400BCCBD6 /* task */,
 				F3FBE9BD14DADB8900CF86BA /* activity */,
 				F3FBE97414DA829400CF86BA /* main */,
@@ -327,6 +340,7 @@
 				F3FBE9D514DAE1CA00CF86BA /* ActivityController.m in Sources */,
 				F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */,
 				F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */,
+				F380C00914DE4FB700880B96 /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

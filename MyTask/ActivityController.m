@@ -8,15 +8,31 @@
 
 #import "ActivityController.h"
 #import "TaskController.h"
+#import "DataManager.h"
+
+@interface ActivityController()
+
+-(NSArray *)getActivities:(int) section;
+
+@end
 
 @implementation ActivityController{
-    NSArray *activitys;
+    NSArray *activities;
+}
+
+-(NSArray *)getActivities:(int) section{
+    NSDictionary *dictionary=[activities objectAtIndex:section];
+    return [[dictionary allValues] objectAtIndex:0];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [[[activities objectAtIndex:section] allKeys] objectAtIndex:0];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        activitys=[NSArray arrayWithObjects:@"逗小朋友欢笑发电",@"逗小朋友尖叫发电", nil];
+        activities=[[DataManager shareInstance] getAllActivities];
     }
     return self;
 }
@@ -63,6 +79,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    activities=[[DataManager shareInstance] getAllActivities];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -91,26 +108,28 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return [activities count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [activitys count];
+    NSLog(@"in section count:%i",[[self getActivities:section] count]);
+    return [[self getActivities:section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *activityContentId = @"activityContentId";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:activityContentId];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:activityContentId];
     }
     
     // Configure the cell...
-    cell.textLabel.text=[activitys objectAtIndex:[indexPath row]];
+    NSDictionary *activity=[[self getActivities:[indexPath section]] objectAtIndex:[indexPath row]];
+    cell.textLabel.text=[activity objectForKey:@"title"];
     
     return cell;
 }
@@ -166,9 +185,9 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     
-    NSLog(@"selected:%i",[indexPath row]);
-    TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:[activitys objectAtIndex:[indexPath row]]];
-    [self.navigationController pushViewController:taskController animated:YES];
+//    NSLog(@"selected:%i",[indexPath row]);
+//    TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:[activitys objectAtIndex:[indexPath row]]];
+//    [self.navigationController pushViewController:taskController animated:YES];
 }
 
 @end
