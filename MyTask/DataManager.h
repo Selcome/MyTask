@@ -14,4 +14,6 @@
 
 -(NSArray *)getAllActivities;
 
+-(NSDictionary *)getActivity:(NSString *)id;
+
 @end

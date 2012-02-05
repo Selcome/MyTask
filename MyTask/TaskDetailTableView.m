@@ -8,9 +8,9 @@
 
 #import "TaskDetailTableView.h"
 
-@implementation TaskDetailTableView{
-    NSArray *taskDetails;
-}
+@implementation TaskDetailTableView
+
+@synthesize activity;
 
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
@@ -26,30 +26,14 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 1;//必然是1
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    //return [taskDetails count];
-    return 2;
+    return 2;//这里手工写，需要几个显示的数据项写几。
 }
-
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-//    NSString *sectionName=nil;
-//    switch (section) {
-//        case 0:
-//            sectionName=@"今天";
-//            break;
-//        case 1:
-//            sectionName=@"昨天";
-//            break;
-//        default:
-//            break;
-//    }
-//    return sectionName;
-//}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,12 +48,25 @@
         if(cell==nil){
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:taskCellTitleId];
         }
-        cell.textLabel.text=@"逗小朋友尖叫发电";
+        cell.textLabel.text=[activity objectForKey:@"title"];
     }else{
         cell = [tableView dequeueReusableCellWithIdentifier:taskCellItemId];
         if(cell==nil){
             NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"TaskDetailTableViewCell" owner:self options:nil];
             cell = [array objectAtIndex:0];
+            
+            NSString *title=nil,*value=nil;
+            
+            if([indexPath row]==1){
+                title=@"描述";
+                value=[activity objectForKey:@"content"];
+            }
+            
+            UILabel *label=(UILabel *)[cell viewWithTag:1];
+            label.text=title;
+            
+            label=(UILabel *)[cell viewWithTag:2];
+            label.text=value;
         }
     }
     

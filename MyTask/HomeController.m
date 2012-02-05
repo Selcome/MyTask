@@ -103,8 +103,8 @@
         {
             NSLog(@"我的任务");
             
-            TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:@"我的任务"];
-            [self.navigationController pushViewController:taskController animated:YES];
+//            TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:@"我的任务"];
+//            [self.navigationController pushViewController:taskController animated:YES];
             break;
         }
         case 5:

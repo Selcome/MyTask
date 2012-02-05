@@ -10,5 +10,6 @@
 
 @interface TaskDetailTableView : UITableView <UITableViewDataSource,UITableViewDelegate>
 
+@property(nonatomic,assign)NSDictionary * activity;
 
 @end

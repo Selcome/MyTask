@@ -8,17 +8,29 @@
 
 #import "TaskController.h"
 #import "TaskDetailTableView.h"
+#import "DataManager.h"
+
+@interface TaskController ()
+-(void)setCurrentView:(UIView *) theView;
+@end
 
 @implementation TaskController{
     __weak UIView *currentSubView;
+    NSDictionary *activity;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString *) theTitle
+-(void)setCurrentView:(UIView *) theView{
+    currentSubView=theView;
+    [subViewContainer addSubview:theView];
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil id:(NSString *) theId
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.navigationItem.title=theTitle;
+        activity=[[DataManager shareInstance] getActivity:theId];
+        self.navigationItem.title=[activity objectForKey:@"title"];
     }
     return self;
 }
@@ -29,22 +41,19 @@
         case 0:
             if(currentSubView!=taskDetailView){
                 [currentSubView removeFromSuperview];
-                currentSubView=taskDetailView;
-                [subViewContainer addSubview:taskDetailView];
+                [self setCurrentView:taskDetailView];
             }
             break;
         case 1:
             if(currentSubView!=commentView){
                 [currentSubView removeFromSuperview];
-                currentSubView=commentView;
-                [subViewContainer addSubview:commentView];
+                [self setCurrentView:commentView];
             }
             break;
         case 2:
             if(currentSubView!=childTaskView){
                 [currentSubView removeFromSuperview];
-                currentSubView=childTaskView;
-                [subViewContainer addSubview:childTaskView];
+                [self setCurrentView:childTaskView];
             }
             break;
         default:
@@ -67,8 +76,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    currentSubView=taskDetailView;
-    [subViewContainer addSubview:taskDetailView];
+    taskDetailView.activity=activity;
+    
+    [self setCurrentView:taskDetailView];
 }
 
 - (void)viewDidUnload

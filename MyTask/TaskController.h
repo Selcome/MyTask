@@ -16,7 +16,7 @@
     IBOutlet UITableView *childTaskView;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil title:(NSString *) theTitle;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil id:(NSString *) theId;
 
 - (IBAction)switchSubView:(id)sender;
 

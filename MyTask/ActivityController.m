@@ -184,10 +184,10 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
-//    NSLog(@"selected:%i",[indexPath row]);
-//    TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:[activitys objectAtIndex:[indexPath row]]];
-//    [self.navigationController pushViewController:taskController animated:YES];
+
+    NSDictionary *activity=[[self getActivities:[indexPath section]] objectAtIndex:[indexPath row]];
+    TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil id:[activity objectForKey:@"id"]];
+    [self.navigationController pushViewController:taskController animated:YES];
 }
 
 @end
