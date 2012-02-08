@@ -113,6 +113,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE7AC5E14E109A30080B9B7 /* http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
 		F32EED4314DBC6C400BCCBD6 /* task */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +175,7 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				2CE7AC5E14E109A30080B9B7 /* http */,
 				F380C00614DE46AE00880B96 /* data */,
 				F32EED4314DBC6C400BCCBD6 /* task */,
 				F3FBE9BD14DADB8900CF86BA /* activity */,
@@ -417,6 +425,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
 				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
 				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
