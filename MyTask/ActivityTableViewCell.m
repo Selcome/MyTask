@@ -29,6 +29,9 @@
 -(void)onShowCell:(NSDictionary *)activity
 {
     contentLable.text=[activity objectForKey:@"title"];
+    iconImageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"%@_small.png",[activity objectForKey:@"type"]]];
+    authorLable.text=[NSString stringWithFormat:@"发布人:%@",[activity objectForKey:@"author"]];
+    createTimerLable.text=[activity objectForKey:@"createTime"];
 }
 
 @end

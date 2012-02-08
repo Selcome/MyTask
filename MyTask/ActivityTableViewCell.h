@@ -13,6 +13,8 @@
 
     __weak IBOutlet UIImageView *iconImageView;
     __weak IBOutlet UILabel *contentLable;
+    __weak IBOutlet UILabel *authorLable;
+    __weak IBOutlet UILabel *createTimerLable;
     
 }
 
