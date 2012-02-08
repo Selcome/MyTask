@@ -68,6 +68,7 @@
         HttpRequest *httpRequest=[[HttpRequest alloc] init];
         NSError *error;
        activities=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
+        
     }
     return self;
 }
