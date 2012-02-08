@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface HttpRequest : NSObject
+{
+    NSMutableData *requestData;
+    BOOL endRequest;
+}
+-(NSData *)getGETRequest:(NSString *)url;
 
 @end

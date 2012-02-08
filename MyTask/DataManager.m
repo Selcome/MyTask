@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-
 #import "DataManager.h"
-
+#import "/usr/include/sqlite3.h"
+#import "HttpRequest.h"
 @implementation DataManager{
     NSMutableArray *activities;
 }
@@ -27,12 +27,47 @@
     self = [super init];
     if (self) {
         activities=[NSMutableArray array];
+        /*
+        //使用数据库生成的fake数据
+        sqlite3 *database;
+        NSString *databaseFilePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"mytask.sqlite"];
         
-        [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"吓唬小孩尖叫发电",@"title",@"吓唬小孩尖叫发电",@"content",@"1",@"id", nil]];
-        [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"演示如何吓小孩尖叫",@"title",@"给同事演示如何吓小孩尖叫",@"content",@"2",@"id", nil]];
-        [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"找到阿布回家的门",@"title",@"和大眼怪一起找到阿布回家的门",@"content",@"3",@"id", nil]];
-        [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"送阿布回家",@"title",@"送阿布回家",@"content",@"4",@"id", nil]];
-        [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"逗小孩欢笑发电",@"title",@"逗小孩欢笑发电",@"content",@"5",@"id", nil]];
+        if (sqlite3_open([databaseFilePath UTF8String], &database)==SQLITE_OK) { 
+            //            NSLog(@">>>>open sqlite db ok.");
+            
+            const char *selectSql="select id,title,content from task"; 
+            sqlite3_stmt *statement; 
+            if (sqlite3_prepare_v2(database, selectSql, -1, &statement, nil)==SQLITE_OK) { 
+                //                NSLog(@">>>>>>select ok."); 
+                while (sqlite3_step(statement)==SQLITE_ROW) {
+                    int _id=sqlite3_column_int(statement, 0);
+                    NSNumber *theId=[NSNumber numberWithInt:_id];
+                    NSString *title=[[NSString alloc] initWithCString:(char *)sqlite3_column_text(statement, 1) encoding:NSUTF8StringEncoding];
+                    NSString *content=[[NSString alloc] initWithCString:(char *)sqlite3_column_text(statement, 2) encoding:NSUTF8StringEncoding];
+                    NSLog(@"id: %@,title: %@, content: %@",[theId stringValue],title,content);
+                    
+                    [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:title,@"title",content,@"content",theId,@"id", nil]];
+                }
+            }
+            
+            sqlite3_finalize(statement);
+        }
+        
+        sqlite3_close(database); 
+         */
+        
+        /* 这里是直接创建的fake数据
+         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"吓唬小孩尖叫发电",@"title",@"吓唬小孩尖叫发电",@"content",@"1",@"id", nil]];
+         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"演示如何吓小孩尖叫",@"title",@"给同事演示如何吓小孩尖叫",@"content",@"2",@"id", nil]];
+         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"找到阿布回家的门",@"title",@"和大眼怪一起找到阿布回家的门",@"content",@"3",@"id", nil]];
+         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"送阿布回家",@"title",@"送阿布回家",@"content",@"4",@"id", nil]];
+         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"逗小孩欢笑发电",@"title",@"逗小孩欢笑发电",@"content",@"5",@"id", nil]];
+         */
+        
+         //使用http生成的fake数据
+        HttpRequest *httpRequest=[[HttpRequest alloc] init];
+        NSError *error;
+       activities=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
     }
     return self;
 }
@@ -43,7 +78,6 @@
             return d;
         }
     }
-    
     return nil;
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
+		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
 		2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1D4F714E2336100EA2547 /* HttpRequest.m */; };
 		F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32EED5014DBC8F800BCCBD6 /* TaskController.m */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
@@ -47,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
+		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2CF1D4F614E2336100EA2547 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		2CF1D4F714E2336100EA2547 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */,
 				F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */,
 				F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */,
 				F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */,
@@ -136,6 +141,7 @@
 		F380C00614DE46AE00880B96 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				2CB81B5714E23B4900BA77C0 /* mytask.sqlite */,
 				F380C00714DE4FB700880B96 /* DataManager.h */,
 				F380C00814DE4FB700880B96 /* DataManager.m */,
 			);
@@ -163,6 +169,7 @@
 		F3FBE92614D79B2800CF86BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */,
 				F3FBE92714D79B2800CF86BA /* UIKit.framework */,
 				F3FBE92914D79B2800CF86BA /* Foundation.framework */,
 				F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */,
@@ -336,6 +343,7 @@
 				F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */,
 				F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */,
 				F380C00514DD2B4800880B96 /* sullivan.png in Resources */,
+				2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

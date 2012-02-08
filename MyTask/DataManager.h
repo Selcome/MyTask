@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define jsonUrl @"http://marcuswang.github.com/MyTaskServer/activity.json"
 @interface DataManager : NSObject
 
 +(id)shareInstance;
