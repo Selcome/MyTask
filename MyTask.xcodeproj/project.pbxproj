@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1D4F714E2336100EA2547 /* HttpRequest.m */; };
 		F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32EED5014DBC8F800BCCBD6 /* TaskController.m */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
 		F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */; };
@@ -46,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CF1D4F614E2336100EA2547 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		2CF1D4F714E2336100EA2547 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
 		F32EED5014DBC8F800BCCBD6 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
 		F32EED5114DBC8F800BCCBD6 /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 		2CE7AC5E14E109A30080B9B7 /* http */ = {
 			isa = PBXGroup;
 			children = (
+				2CF1D4F614E2336100EA2547 /* HttpRequest.h */,
+				2CF1D4F714E2336100EA2547 /* HttpRequest.m */,
 			);
 			name = http;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */,
 				F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */,
 				F380C00914DE4FB700880B96 /* DataManager.m in Sources */,
+				2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
