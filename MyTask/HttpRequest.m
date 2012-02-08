@@ -7,7 +7,6 @@
 //
 
 #import "HttpRequest.h"
-
 @implementation HttpRequest
 
 @end
