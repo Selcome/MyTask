@@ -54,7 +54,7 @@
         }
         
         sqlite3_close(database); 
-         */
+        */
         
         /* 这里是直接创建的fake数据
          [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"吓唬小孩尖叫发电",@"title",@"吓唬小孩尖叫发电",@"content",@"1",@"id", nil]];
@@ -65,10 +65,11 @@
          */
         
          //使用http生成的fake数据
+//        /*
         HttpRequest *httpRequest=[[HttpRequest alloc] init];
         NSError *error;
        activities=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
-        
+//         */
     }
     return self;
 }

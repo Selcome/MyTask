@@ -13,6 +13,9 @@
 		2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */; };
 		2CDAE8E514E253460092DD10 /* posted_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E414E253460092DD10 /* posted_small.png */; };
 		2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E614E2535C0092DD10 /* task_small.png */; };
+		2CE4629F14E406720007B2E1 /* ColleagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4629D14E406720007B2E1 /* ColleagueController.m */; };
+		2CE462A014E406720007B2E1 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4629E14E406720007B2E1 /* ColleagueController.xib */; };
+		2CE462A214E40AC90007B2E1 /* colleague.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE462A114E40AC90007B2E1 /* colleague.plist */; };
 		2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1D4F714E2336100EA2547 /* HttpRequest.m */; };
 		F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32EED5014DBC8F800BCCBD6 /* TaskController.m */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
@@ -60,6 +63,10 @@
 		2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		2CDAE8E414E253460092DD10 /* posted_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = posted_small.png; sourceTree = "<group>"; };
 		2CDAE8E614E2535C0092DD10 /* task_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task_small.png; sourceTree = "<group>"; };
+		2CE4629C14E406720007B2E1 /* ColleagueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColleagueController.h; sourceTree = "<group>"; };
+		2CE4629D14E406720007B2E1 /* ColleagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueController.m; sourceTree = "<group>"; };
+		2CE4629E14E406720007B2E1 /* ColleagueController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueController.xib; sourceTree = "<group>"; };
+		2CE462A114E40AC90007B2E1 /* colleague.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colleague.plist; sourceTree = "<group>"; };
 		2CF1D4F614E2336100EA2547 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		2CF1D4F714E2336100EA2547 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
@@ -125,6 +132,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE4629A14E4064E0007B2E1 /* colleague */ = {
+			isa = PBXGroup;
+			children = (
+				2CE4629C14E406720007B2E1 /* ColleagueController.h */,
+				2CE4629D14E406720007B2E1 /* ColleagueController.m */,
+				2CE4629E14E406720007B2E1 /* ColleagueController.xib */,
+				2CE462A114E40AC90007B2E1 /* colleague.plist */,
+			);
+			name = colleague;
+			sourceTree = "<group>";
+		};
 		2CE7AC5E14E109A30080B9B7 /* http */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +207,7 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				2CE4629A14E4064E0007B2E1 /* colleague */,
 				2CE7AC5E14E109A30080B9B7 /* http */,
 				F380C00614DE46AE00880B96 /* data */,
 				F32EED4314DBC6C400BCCBD6 /* task */,
@@ -361,6 +380,8 @@
 				2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */,
 				2CDAE8E514E253460092DD10 /* posted_small.png in Resources */,
 				2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */,
+				2CE462A014E406720007B2E1 /* ColleagueController.xib in Resources */,
+				2CE462A214E40AC90007B2E1 /* colleague.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +402,7 @@
 				F380C00914DE4FB700880B96 /* DataManager.m in Sources */,
 				2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */,
 				2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */,
+				2CE4629F14E406720007B2E1 /* ColleagueController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
