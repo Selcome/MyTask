@@ -16,6 +16,7 @@
 		2CE4629F14E406720007B2E1 /* ColleagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4629D14E406720007B2E1 /* ColleagueController.m */; };
 		2CE462A014E406720007B2E1 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4629E14E406720007B2E1 /* ColleagueController.xib */; };
 		2CE462A214E40AC90007B2E1 /* colleague.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE462A114E40AC90007B2E1 /* colleague.plist */; };
+		2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */; };
 		2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF1D4F714E2336100EA2547 /* HttpRequest.m */; };
 		F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32EED5014DBC8F800BCCBD6 /* TaskController.m */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
@@ -67,6 +68,8 @@
 		2CE4629D14E406720007B2E1 /* ColleagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueController.m; sourceTree = "<group>"; };
 		2CE4629E14E406720007B2E1 /* ColleagueController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueController.xib; sourceTree = "<group>"; };
 		2CE462A114E40AC90007B2E1 /* colleague.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colleague.plist; sourceTree = "<group>"; };
+		2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableViewCell.h; sourceTree = "<group>"; };
+		2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableViewCell.m; sourceTree = "<group>"; };
 		2CF1D4F614E2336100EA2547 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		2CF1D4F714E2336100EA2547 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				F32EED5114DBC8F800BCCBD6 /* TaskController.xib */,
 				F380BFFE14DCF46700880B96 /* TaskDetailTableView.h */,
 				F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */,
+				2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */,
+				2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */,
 				F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */,
 			);
 			name = task;
@@ -403,6 +408,7 @@
 				2CF1D4F814E2336100EA2547 /* HttpRequest.m in Sources */,
 				2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */,
 				2CE4629F14E406720007B2E1 /* ColleagueController.m in Sources */,
+				2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
