@@ -70,6 +70,12 @@
         NSError *error;
        activities=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
 //         */
+        /*
+        //使用plist 
+        NSString *filename= [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"mytask.plist"]; 
+        //读文件
+        activities= [[NSDictionary dictionaryWithContentsOfFile:filename] objectForKey:@"mytask"];
+         */
     }
     return self;
 }

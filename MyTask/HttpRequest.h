@@ -14,5 +14,4 @@
     BOOL endRequest;
 }
 -(NSData *)getGETRequest:(NSString *)url;
-
 @end
