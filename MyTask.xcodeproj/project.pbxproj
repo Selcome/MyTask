@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
+		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
+		2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */; };
+		2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */; };
+		2CDAE8E514E253460092DD10 /* posted_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E414E253460092DD10 /* posted_small.png */; };
+		2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E614E2535C0092DD10 /* task_small.png */; };
+		2CDAE8EE14E265030092DD10 /* mytask.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8ED14E265030092DD10 /* mytask.plist */; };
+		2CE4629F14E406720007B2E1 /* ColleagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE4629D14E406720007B2E1 /* ColleagueController.m */; };
+		2CE462A014E406720007B2E1 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4629E14E406720007B2E1 /* ColleagueController.xib */; };
+		2CE462A214E40AC90007B2E1 /* colleague.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE462A114E40AC90007B2E1 /* colleague.plist */; };
+		2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */; };
+		2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C014E4C3E30007B2E1 /* HttpRequest.m */; };
+		2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C214E4C41B0007B2E1 /* DataManager.m */; };
 		F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32EED5014DBC8F800BCCBD6 /* TaskController.m */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
 		F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */; };
@@ -48,6 +61,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
+		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
+		2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
+		2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		2CDAE8E414E253460092DD10 /* posted_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = posted_small.png; sourceTree = "<group>"; };
+		2CDAE8E614E2535C0092DD10 /* task_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task_small.png; sourceTree = "<group>"; };
+		2CDAE8ED14E265030092DD10 /* mytask.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mytask.plist; sourceTree = "<group>"; };
+		2CE4629C14E406720007B2E1 /* ColleagueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColleagueController.h; sourceTree = "<group>"; };
+		2CE4629D14E406720007B2E1 /* ColleagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueController.m; sourceTree = "<group>"; };
+		2CE4629E14E406720007B2E1 /* ColleagueController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueController.xib; sourceTree = "<group>"; };
+		2CE462A114E40AC90007B2E1 /* colleague.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colleague.plist; sourceTree = "<group>"; };
+		2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableViewCell.h; sourceTree = "<group>"; };
+		2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableViewCell.m; sourceTree = "<group>"; };
+		2CE462BF14E4C3E30007B2E1 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		2CE462C014E4C3E30007B2E1 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		2CE462C214E4C41B0007B2E1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
 		F32EED5014DBC8F800BCCBD6 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
 		F32EED5114DBC8F800BCCBD6 /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
@@ -113,9 +143,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE4629A14E4064E0007B2E1 /* colleague */ = {
+			isa = PBXGroup;
+			children = (
+				2CE4629C14E406720007B2E1 /* ColleagueController.h */,
+				2CE4629D14E406720007B2E1 /* ColleagueController.m */,
+				2CE4629E14E406720007B2E1 /* ColleagueController.xib */,
+				2CE462A114E40AC90007B2E1 /* colleague.plist */,
+			);
+			name = colleague;
+			sourceTree = "<group>";
+		};
 		2CE7AC5E14E109A30080B9B7 /* http */ = {
 			isa = PBXGroup;
 			children = (
+				2CE462BF14E4C3E30007B2E1 /* HttpRequest.h */,
+				2CE462C014E4C3E30007B2E1 /* HttpRequest.m */,
 			);
 			name = http;
 			sourceTree = "<group>";
@@ -128,6 +171,8 @@
 				F32EED5114DBC8F800BCCBD6 /* TaskController.xib */,
 				F380BFFE14DCF46700880B96 /* TaskDetailTableView.h */,
 				F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */,
+				2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */,
+				2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */,
 				F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */,
 			);
 			name = task;
@@ -136,9 +181,10 @@
 		F380C00614DE46AE00880B96 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				F380C01514DFD65C00880B96 /* mytask.sqlite */,
+				2CB81B5714E23B4900BA77C0 /* mytask.sqlite */,
 				F380C00714DE4FB700880B96 /* DataManager.h */,
-				F380C00814DE4FB700880B96 /* DataManager.m */,
+				2CE462C214E4C41B0007B2E1 /* DataManager.m */,
+				2CDAE8ED14E265030092DD10 /* mytask.plist */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -165,6 +211,7 @@
 		F3FBE92614D79B2800CF86BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */,
 				F3FBE92714D79B2800CF86BA /* UIKit.framework */,
 				F3FBE92914D79B2800CF86BA /* Foundation.framework */,
 				F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */,
@@ -175,6 +222,7 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				2CE4629A14E4064E0007B2E1 /* colleague */,
 				2CE7AC5E14E109A30080B9B7 /* http */,
 				F380C00614DE46AE00880B96 /* data */,
 				F32EED4314DBC6C400BCCBD6 /* task */,
@@ -256,9 +304,14 @@
 		F3FBE9BD14DADB8900CF86BA /* activity */ = {
 			isa = PBXGroup;
 			children = (
+				2CDAE8E614E2535C0092DD10 /* task_small.png */,
+				2CDAE8E414E253460092DD10 /* posted_small.png */,
 				F3FBE9D214DAE1CA00CF86BA /* ActivityController.h */,
 				F3FBE9D314DAE1CA00CF86BA /* ActivityController.m */,
 				F3FBE9D414DAE1CA00CF86BA /* ActivityController.xib */,
+				2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */,
+				2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */,
+				2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */,
 			);
 			name = activity;
 			sourceTree = "<group>";
@@ -338,7 +391,13 @@
 				F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */,
 				F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */,
 				F380C00514DD2B4800880B96 /* sullivan.png in Resources */,
-				F380C01614DFD65C00880B96 /* mytask.sqlite in Resources */,
+				2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */,
+				2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */,
+				2CDAE8E514E253460092DD10 /* posted_small.png in Resources */,
+				2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */,
+				2CE462A014E406720007B2E1 /* ColleagueController.xib in Resources */,
+				2CE462A214E40AC90007B2E1 /* colleague.plist in Resources */,
+				2CDAE8EE14E265030092DD10 /* mytask.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +415,11 @@
 				F3FBE9D514DAE1CA00CF86BA /* ActivityController.m in Sources */,
 				F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */,
 				F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */,
-				F380C00914DE4FB700880B96 /* DataManager.m in Sources */,
+				2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */,
+				2CE4629F14E406720007B2E1 /* ColleagueController.m in Sources */,
+				2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */,
+				2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */,
+				2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +443,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiao ran (TE8FBG5AHZ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -395,6 +458,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6C5571EA-EEC1-4C8F-BB49-ED4E1C5BBAEA";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -405,7 +469,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiao ran (TE8FBG5AHZ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -414,6 +478,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6C5571EA-EEC1-4C8F-BB49-ED4E1C5BBAEA";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -422,11 +487,13 @@
 		F3FBE93C14D79B2800CF86BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiao ran (TE8FBG5AHZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
 				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6C5571EA-EEC1-4C8F-BB49-ED4E1C5BBAEA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,11 +501,13 @@
 		F3FBE93D14D79B2800CF86BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiao ran (TE8FBG5AHZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
 				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6C5571EA-EEC1-4C8F-BB49-ED4E1C5BBAEA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

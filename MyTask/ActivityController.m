@@ -9,7 +9,7 @@
 #import "ActivityController.h"
 #import "TaskController.h"
 #import "DataManager.h"
-
+#import "ActivityTableViewCell.h"
 @interface ActivityController()
 
 -(NSArray *)getActivities:(int) section;
@@ -120,20 +120,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *activityContentId = @"activityContentId";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:activityContentId];
+    static NSString *activityContentId = @"ActivityTableViewCell";
+    ActivityTableViewCell *cell =(ActivityTableViewCell *)[tableView dequeueReusableCellWithIdentifier:activityContentId];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:activityContentId];
+        NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"ActivityTableViewCell" owner:self options:nil];
+        cell = [array objectAtIndex:0];
     }
-    
-    // Configure the cell...
+//    // Configure the cell...
     NSDictionary *activity=[[self getActivities:[indexPath section]] objectAtIndex:[indexPath row]];
-    cell.textLabel.text=[activity objectForKey:@"title"];
+//    cell.textLabel.text=[activity objectForKey:@"title"];
+    [cell onShowCell:activity];
     
     return cell;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 58;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

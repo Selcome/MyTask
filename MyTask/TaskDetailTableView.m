@@ -7,7 +7,7 @@
 //
 
 #import "TaskDetailTableView.h"
-
+#import "TaskDetailTableViewCell.h"
 @implementation TaskDetailTableView
 
 @synthesize activity;
@@ -32,7 +32,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 2;//这里手工写，需要几个显示的数据项写几。
+    return 6;//这里手工写，需要几个显示的数据项写几。
 }
 
 
@@ -40,37 +40,25 @@
 {
     static NSString *taskCellTitleId = @"taskTitleCell";
     static NSString *taskCellItemId = @"taskItemCell";
-    
-    UITableViewCell *cell =nil;
-    
     if([indexPath row]==0){
-         cell = [tableView dequeueReusableCellWithIdentifier:taskCellTitleId];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:taskCellTitleId];
         if(cell==nil){
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:taskCellTitleId];
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         }
         cell.textLabel.text=[activity objectForKey:@"title"];
+         return cell;
     }else{
-        cell = [tableView dequeueReusableCellWithIdentifier:taskCellItemId];
+      TaskDetailTableViewCell *cell = (TaskDetailTableViewCell *)[tableView dequeueReusableCellWithIdentifier:taskCellItemId];
         if(cell==nil){
             NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"TaskDetailTableViewCell" owner:self options:nil];
             cell = [array objectAtIndex:0];
-            
-            NSString *title=nil,*value=nil;
-            
-            if([indexPath row]==1){
-                title=@"描述";
-                value=[activity objectForKey:@"content"];
-            }
-            
-            UILabel *label=(UILabel *)[cell viewWithTag:1];
-            label.text=title;
-            
-            label=(UILabel *)[cell viewWithTag:2];
-            label.text=value;
         }
+        [cell onShowCell:activity indexPath:indexPath];
+        return cell;
     }
     
-    return cell;
+    return nil;
 }
 
 
