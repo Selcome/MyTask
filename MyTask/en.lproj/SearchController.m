@@ -40,7 +40,7 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    // e.g. self.myOutlet = nil; 
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -48,5 +48,24 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *taskCellTitleId=@"searchTableViewIndetifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:taskCellTitleId];
+    if(cell==nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:taskCellTitleId];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    }
+    cell.textLabel.text=@"wangjun";
+    return cell;
+}
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    UITableView *rootTableView=(UITableView *)searchDisplayController.searchResultsTableView;
+    [rootTableView reloadData];
+}
 @end

@@ -16,8 +16,10 @@
 		2C61DC8A14EBB3D900F50200 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC8814EBB3D900F50200 /* SettingViewController.xib */; };
 		2C61DC8F14EBCA3200F50200 /* FavoritesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC8D14EBCA3200F50200 /* FavoritesController.m */; };
 		2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */; };
-		2C61DC9514EBD15300F50200 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9314EBD15300F50200 /* SearchController.m */; };
-		2C61DC9614EBD15300F50200 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC9414EBD15300F50200 /* SearchController.xib */; };
+		2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC9914EBF63800F50200 /* SearchController.xib */; };
+		2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9C14EBF63F00F50200 /* SearchController.m */; };
+		2C61DC9D14EBF64200F50200 /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9F14EBF64200F50200 /* TaskDetailTableView.m */; };
+		2C61DCA014EBF64300F50200 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DCA214EBF64300F50200 /* TaskController.m */; };
 		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
 		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
 		2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */; };
@@ -28,9 +30,7 @@
 		2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */; };
 		2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C014E4C3E30007B2E1 /* HttpRequest.m */; };
 		2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C214E4C41B0007B2E1 /* DataManager.m */; };
-		F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32EED5014DBC8F800BCCBD6 /* TaskController.m */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
-		F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */; };
 		F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */; };
 		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
@@ -80,8 +80,11 @@
 		2C61DC8D14EBCA3200F50200 /* FavoritesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesController.m; sourceTree = "<group>"; };
 		2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesController.xib; sourceTree = "<group>"; };
 		2C61DC9214EBD15300F50200 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
-		2C61DC9314EBD15300F50200 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
-		2C61DC9414EBD15300F50200 /* SearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchController.xib; sourceTree = "<group>"; };
+		2C61DC9814EBF63800F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SearchController.xib; sourceTree = "<group>"; };
+		2C61DC9B14EBF63F00F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/SearchController.m; sourceTree = "<group>"; };
+		2C61DC9E14EBF64200F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/TaskDetailTableView.m; sourceTree = "<group>"; };
+		2C61DCA114EBF64300F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/TaskController.m; sourceTree = "<group>"; };
+		2C61DCA314EBF67E00F50200 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SearchController.xib"; sourceTree = "<group>"; };
 		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
@@ -96,10 +99,8 @@
 		2CE462C014E4C3E30007B2E1 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		2CE462C214E4C41B0007B2E1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
-		F32EED5014DBC8F800BCCBD6 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
 		F32EED5114DBC8F800BCCBD6 /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
 		F380BFFE14DCF46700880B96 /* TaskDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableView.h; sourceTree = "<group>"; };
-		F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableView.m; sourceTree = "<group>"; };
 		F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
 		F380C00414DD2B4800880B96 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		F380C00714DE4FB700880B96 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -181,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				2C61DC9214EBD15300F50200 /* SearchController.h */,
-				2C61DC9314EBD15300F50200 /* SearchController.m */,
-				2C61DC9414EBD15300F50200 /* SearchController.xib */,
+				2C61DC9C14EBF63F00F50200 /* SearchController.m */,
+				2C61DC9914EBF63800F50200 /* SearchController.xib */,
 			);
 			name = search;
 			sourceTree = "<group>";
@@ -214,10 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				F32EED4F14DBC8F800BCCBD6 /* TaskController.h */,
-				F32EED5014DBC8F800BCCBD6 /* TaskController.m */,
+				2C61DCA214EBF64300F50200 /* TaskController.m */,
 				F32EED5114DBC8F800BCCBD6 /* TaskController.xib */,
 				F380BFFE14DCF46700880B96 /* TaskDetailTableView.h */,
-				F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */,
+				2C61DC9F14EBF64200F50200 /* TaskDetailTableView.m */,
 				2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */,
 				2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */,
 				F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */,
@@ -399,6 +400,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = F3FBE91814D79B2800CF86BA;
 			productRefGroup = F3FBE92414D79B2800CF86BA /* Products */;
@@ -450,7 +452,7 @@
 				2C61DC8414EBAE8E00F50200 /* colleague.plist in Resources */,
 				2C61DC8A14EBB3D900F50200 /* SettingViewController.xib in Resources */,
 				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
-				2C61DC9614EBD15300F50200 /* SearchController.xib in Resources */,
+				2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,8 +468,8 @@
 				F3FBE94C14D7D3D200CF86BA /* AuthenticationController.m in Sources */,
 				F3FBE95814D7DD3E00CF86BA /* HomeController.m in Sources */,
 				F3FBE9D514DAE1CA00CF86BA /* ActivityController.m in Sources */,
-				F32EED5214DBC8F800BCCBD6 /* TaskController.m in Sources */,
-				F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */,
+				2C61DCA014EBF64300F50200 /* TaskController.m in Sources */,
+				2C61DC9D14EBF64200F50200 /* TaskDetailTableView.m in Sources */,
 				2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */,
 				2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */,
 				2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */,
@@ -476,13 +478,46 @@
 				2C61DC8314EBAE8E00F50200 /* ColleagueController.m in Sources */,
 				2C61DC8914EBB3D900F50200 /* SettingViewController.m in Sources */,
 				2C61DC8F14EBCA3200F50200 /* FavoritesController.m in Sources */,
-				2C61DC9514EBD15300F50200 /* SearchController.m in Sources */,
+				2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2C61DC9914EBF63800F50200 /* SearchController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C61DC9814EBF63800F50200 /* en */,
+				2C61DCA314EBF67E00F50200 /* zh-Hans */,
+			);
+			name = SearchController.xib;
+			sourceTree = "<group>";
+		};
+		2C61DC9C14EBF63F00F50200 /* SearchController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C61DC9B14EBF63F00F50200 /* en */,
+			);
+			name = SearchController.m;
+			sourceTree = "<group>";
+		};
+		2C61DC9F14EBF64200F50200 /* TaskDetailTableView.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C61DC9E14EBF64200F50200 /* en */,
+			);
+			name = TaskDetailTableView.m;
+			sourceTree = "<group>";
+		};
+		2C61DCA214EBF64300F50200 /* TaskController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C61DCA114EBF64300F50200 /* en */,
+			);
+			name = TaskController.m;
+			sourceTree = "<group>";
+		};
 		F3FBE93014D79B2800CF86BA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
