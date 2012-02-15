@@ -15,6 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addLoginViewController:) name:@"change.login.viewcontroller" object:nil];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -23,7 +24,11 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
-
+-(void)addLoginViewController:(NSNotification *)notification
+{
+    AuthenticationController *authenticationController=[[AuthenticationController alloc] initWithNibName:@"AuthenticationController" bundle:nil];
+    self.window.rootViewController=authenticationController;  
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*

@@ -8,7 +8,7 @@
 
 #import "HomeController.h"
 #import "TaskController.h"
-
+#import "SettingViewController.h"
 @interface HomeController()
 -(void)setUserImage;
 @end
@@ -111,7 +111,10 @@
             NSLog(@"工作区");
             break;
         case 6:
-            NSLog(@"设置");
+        {
+            SettingViewController *settingViewController=[[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+            [self.navigationController pushViewController:settingViewController animated:YES];
+        }
             break;
         default:
             break;
