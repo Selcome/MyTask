@@ -14,6 +14,10 @@
 		2C61DC8414EBAE8E00F50200 /* colleague.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7F14EBAE8E00F50200 /* colleague.plist */; };
 		2C61DC8914EBB3D900F50200 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC8714EBB3D900F50200 /* SettingViewController.m */; };
 		2C61DC8A14EBB3D900F50200 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC8814EBB3D900F50200 /* SettingViewController.xib */; };
+		2C61DC8F14EBCA3200F50200 /* FavoritesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC8D14EBCA3200F50200 /* FavoritesController.m */; };
+		2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */; };
+		2C61DC9514EBD15300F50200 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9314EBD15300F50200 /* SearchController.m */; };
+		2C61DC9614EBD15300F50200 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC9414EBD15300F50200 /* SearchController.xib */; };
 		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
 		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
 		2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */; };
@@ -72,6 +76,12 @@
 		2C61DC8614EBB3D900F50200 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		2C61DC8714EBB3D900F50200 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		2C61DC8814EBB3D900F50200 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		2C61DC8C14EBCA3200F50200 /* FavoritesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesController.h; sourceTree = "<group>"; };
+		2C61DC8D14EBCA3200F50200 /* FavoritesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesController.m; sourceTree = "<group>"; };
+		2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesController.xib; sourceTree = "<group>"; };
+		2C61DC9214EBD15300F50200 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		2C61DC9314EBD15300F50200 /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
+		2C61DC9414EBD15300F50200 /* SearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchController.xib; sourceTree = "<group>"; };
 		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
@@ -157,6 +167,26 @@
 			name = setting;
 			sourceTree = "<group>";
 		};
+		2C61DC8B14EBCA0F00F50200 /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				2C61DC8C14EBCA3200F50200 /* FavoritesController.h */,
+				2C61DC8D14EBCA3200F50200 /* FavoritesController.m */,
+				2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */,
+			);
+			name = favorites;
+			sourceTree = "<group>";
+		};
+		2C61DC9114EBD13500F50200 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				2C61DC9214EBD15300F50200 /* SearchController.h */,
+				2C61DC9314EBD15300F50200 /* SearchController.m */,
+				2C61DC9414EBD15300F50200 /* SearchController.xib */,
+			);
+			name = search;
+			sourceTree = "<group>";
+		};
 		2CE4629A14E4064E0007B2E1 /* colleague */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +268,8 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				2C61DC9114EBD13500F50200 /* search */,
+				2C61DC8B14EBCA0F00F50200 /* favorites */,
 				2CE4629A14E4064E0007B2E1 /* colleague */,
 				2CE7AC5E14E109A30080B9B7 /* http */,
 				F380C00614DE46AE00880B96 /* data */,
@@ -417,6 +449,8 @@
 				2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */,
 				2C61DC8414EBAE8E00F50200 /* colleague.plist in Resources */,
 				2C61DC8A14EBB3D900F50200 /* SettingViewController.xib in Resources */,
+				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
+				2C61DC9614EBD15300F50200 /* SearchController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +475,8 @@
 				2C61DC8114EBAE8E00F50200 /* ColleagueTableViewCell.m in Sources */,
 				2C61DC8314EBAE8E00F50200 /* ColleagueController.m in Sources */,
 				2C61DC8914EBB3D900F50200 /* SettingViewController.m in Sources */,
+				2C61DC8F14EBCA3200F50200 /* FavoritesController.m in Sources */,
+				2C61DC9514EBD15300F50200 /* SearchController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
