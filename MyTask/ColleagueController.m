@@ -7,7 +7,7 @@
 //
 
 #import "ColleagueController.h"
-
+#import "ColleagueTableViewCell.h"
 @implementation ColleagueController
 
 - (id)initWithCoder:(NSCoder *)coder {
@@ -60,13 +60,17 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *taskCellTitleId = @"colleagueController";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:taskCellTitleId];
+    static NSString *taskCellTitleId = @"ColleagueTableViewCell";
+    ColleagueTableViewCell *cell = (ColleagueTableViewCell *)[tableView dequeueReusableCellWithIdentifier:taskCellTitleId];
     if(cell==nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:taskCellTitleId];
-        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"ColleagueTableViewCell" owner:self options:nil];
+        cell = [array objectAtIndex:0];
     }
-    cell.textLabel.text=[colleagueArray objectAtIndex:[indexPath row]];
+    [cell onShowCell:[colleagueArray objectAtIndex:[indexPath row]]];
     return cell;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
 }
 @end
