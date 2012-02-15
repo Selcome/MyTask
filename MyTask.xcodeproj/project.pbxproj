@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C61DC5714EBA18F00F50200 /* ColleagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC5614EBA18F00F50200 /* ColleagueTableViewCell.m */; };
+		2C61DC5A14EBA19D00F50200 /* ColleagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC5914EBA19D00F50200 /* ColleagueTableViewCell.xib */; };
 		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
-		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
 		2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */; };
 		2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */; };
 		2CDAE8E514E253460092DD10 /* posted_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E414E253460092DD10 /* posted_small.png */; };
@@ -25,9 +26,7 @@
 		F380C00014DCF46700880B96 /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F380BFFF14DCF46700880B96 /* TaskDetailTableView.m */; };
 		F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */; };
 		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
-		F380C00914DE4FB700880B96 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F380C00814DE4FB700880B96 /* DataManager.m */; };
 		F380C01314DFD5F700880B96 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F380C01214DFD5F700880B96 /* libsqlite3.dylib */; };
-		F380C01614DFD65C00880B96 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F380C01514DFD65C00880B96 /* mytask.sqlite */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
 		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
 		F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */; };
@@ -61,6 +60,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C61DC5514EBA18F00F50200 /* ColleagueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColleagueTableViewCell.h; sourceTree = "<group>"; };
+		2C61DC5614EBA18F00F50200 /* ColleagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueTableViewCell.m; sourceTree = "<group>"; };
+		2C61DC5914EBA19D00F50200 /* ColleagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueTableViewCell.xib; sourceTree = "<group>"; };
 		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
@@ -86,9 +88,7 @@
 		F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
 		F380C00414DD2B4800880B96 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		F380C00714DE4FB700880B96 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
-		F380C00814DE4FB700880B96 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F380C01214DFD5F700880B96 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		F380C01514DFD65C00880B96 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBE92714D79B2800CF86BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3FBE92914D79B2800CF86BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +150,9 @@
 				2CE4629D14E406720007B2E1 /* ColleagueController.m */,
 				2CE4629E14E406720007B2E1 /* ColleagueController.xib */,
 				2CE462A114E40AC90007B2E1 /* colleague.plist */,
+				2C61DC5514EBA18F00F50200 /* ColleagueTableViewCell.h */,
+				2C61DC5614EBA18F00F50200 /* ColleagueTableViewCell.m */,
+				2C61DC5914EBA19D00F50200 /* ColleagueTableViewCell.xib */,
 			);
 			name = colleague;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				2CE462A014E406720007B2E1 /* ColleagueController.xib in Resources */,
 				2CE462A214E40AC90007B2E1 /* colleague.plist in Resources */,
 				2CDAE8EE14E265030092DD10 /* mytask.plist in Resources */,
+				2C61DC5A14EBA19D00F50200 /* ColleagueTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +424,7 @@
 				2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */,
 				2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */,
 				2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */,
+				2C61DC5714EBA18F00F50200 /* ColleagueTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
