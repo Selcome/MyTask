@@ -9,6 +9,7 @@
 #import "HomeController.h"
 #import "TaskController.h"
 #import "SettingViewController.h"
+#import "ActivityController.h"
 @interface HomeController()
 -(void)setUserImage;
 @end
@@ -101,10 +102,10 @@
             break;
         case 4:
         {
-            NSLog(@"我的任务");
-            
-//            TaskController *taskController=[[TaskController alloc] initWithNibName:@"TaskController" bundle:nil title:@"我的任务"];
-//            [self.navigationController pushViewController:taskController animated:YES];
+            ActivityController *activityController=[[ActivityController alloc] initWithNibName:@"ActivityController" bundle:nil];
+            NSLog(@">>>>>>>>>>>>>>>>>>>>>>>>>>>>>=%@",activityController);
+            [self.navigationController pushViewController:activityController animated:YES];
+            activityController.navigationItem.title=@"我的任务";
             break;
         }
         case 5:
