@@ -31,7 +31,6 @@
         //使用数据库生成的fake数据
         sqlite3 *database;
         NSString *databaseFilePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"mytask.sqlite"];
-        
         if (sqlite3_open([databaseFilePath UTF8String], &database)==SQLITE_OK) { 
             //            NSLog(@">>>>open sqlite db ok.");
             
@@ -52,6 +51,7 @@
             
             sqlite3_finalize(statement);
         }
+        
         sqlite3_close(database); 
         */
         /* 这里是直接创建的fake数据
@@ -60,7 +60,8 @@
          [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"找到阿布回家的门",@"title",@"和大眼怪一起找到阿布回家的门",@"content",@"3",@"id", nil]];
          [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"送阿布回家",@"title",@"送阿布回家",@"content",@"4",@"id", nil]];
          [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"逗小孩欢笑发电",@"title",@"逗小孩欢笑发电",@"content",@"5",@"id", nil]];
-         */        
+         */
+        
          //使用http生成的fake数据
 //        /*
         HttpRequest *httpRequest=[[HttpRequest alloc] init];
