@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"搜素";
+    self.navigationItem.title=@"搜索";
     // Do any additional setup after loading the view from its nib.
 }
 
