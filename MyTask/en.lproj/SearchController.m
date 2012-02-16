@@ -65,6 +65,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SearchResultController *searchResultController=[[SearchResultController alloc] initWithNibName:@"SearchResultController" bundle:nil];
+    
     [self.navigationController pushViewController:searchResultController animated:YES];
     
 }
