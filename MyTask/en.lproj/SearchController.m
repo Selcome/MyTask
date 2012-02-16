@@ -7,7 +7,7 @@
 //
 
 #import "SearchController.h"
-
+#import "SearchResultController.h"
 @implementation SearchController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -58,10 +58,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:taskCellTitleId];
     if(cell==nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:taskCellTitleId];
-        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
     cell.textLabel.text=@"wangjun";
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SearchResultController *searchResultController=[[SearchResultController alloc] initWithNibName:@"SearchResultController" bundle:nil];
+    [self.navigationController pushViewController:searchResultController animated:YES];
+    
 }
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {

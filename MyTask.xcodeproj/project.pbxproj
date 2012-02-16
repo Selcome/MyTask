@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C30204414ED339300761FE0 /* SearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30204214ED339300761FE0 /* SearchResultController.m */; };
+		2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C30204314ED339300761FE0 /* SearchResultController.xib */; };
 		2C61DC8014EBAE8E00F50200 /* ColleagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */; };
 		2C61DC8114EBAE8E00F50200 /* ColleagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC7A14EBAE8E00F50200 /* ColleagueTableViewCell.m */; };
 		2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */; };
@@ -68,6 +70,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C30204114ED339300761FE0 /* SearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultController.h; sourceTree = "<group>"; };
+		2C30204214ED339300761FE0 /* SearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultController.m; sourceTree = "<group>"; };
+		2C30204314ED339300761FE0 /* SearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultController.xib; sourceTree = "<group>"; };
 		2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueTableViewCell.xib; sourceTree = "<group>"; };
 		2C61DC7A14EBAE8E00F50200 /* ColleagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueTableViewCell.m; sourceTree = "<group>"; };
 		2C61DC7B14EBAE8E00F50200 /* ColleagueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColleagueTableViewCell.h; sourceTree = "<group>"; };
@@ -189,6 +194,9 @@
 				2C61DC9214EBD15300F50200 /* SearchController.h */,
 				2C61DC9C14EBF63F00F50200 /* SearchController.m */,
 				2C61DC9914EBF63800F50200 /* SearchController.xib */,
+				2C30204114ED339300761FE0 /* SearchResultController.h */,
+				2C30204214ED339300761FE0 /* SearchResultController.m */,
+				2C30204314ED339300761FE0 /* SearchResultController.xib */,
 			);
 			name = search;
 			sourceTree = "<group>";
@@ -470,6 +478,7 @@
 				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
 				2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */,
 				2C61DCC714ECE88E00F50200 /* MyTaskController.xib in Resources */,
+				2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +506,7 @@
 				2C61DC8F14EBCA3200F50200 /* FavoritesController.m in Sources */,
 				2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */,
 				2C61DCC614ECE88E00F50200 /* MyTaskController.m in Sources */,
+				2C30204414ED339300761FE0 /* SearchResultController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

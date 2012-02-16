@@ -1,14 +1,14 @@
 //
-//  FavoritesController.m
+//  SearchResultController.m
 //  MyTask
 //
-//  Created by marcus wang on 12-2-15.
+//  Created by marcus wang on 12-2-16.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "FavoritesController.h"
+#import "SearchResultController.h"
 
-@implementation FavoritesController
+@implementation SearchResultController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,7 +25,6 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
-   
 }
 
 #pragma mark - View lifecycle
@@ -33,7 +32,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"收藏";
     // Do any additional setup after loading the view from its nib.
 }
 
