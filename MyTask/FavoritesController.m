@@ -8,6 +8,8 @@
 
 #import "FavoritesController.h"
 
+#import <AddressBookUI/AddressBookUI.h>
+
 @implementation FavoritesController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,6 +37,9 @@
     [super viewDidLoad];
     self.navigationItem.title=@"收藏";
     // Do any additional setup after loading the view from its nib.
+    
+    ABPeoplePickerNavigationController *aBUnknownPersonViewController=[[ABPeoplePickerNavigationController alloc] init];
+    [self presentModalViewController:aBUnknownPersonViewController animated:YES];
 }
 
 - (void)viewDidUnload

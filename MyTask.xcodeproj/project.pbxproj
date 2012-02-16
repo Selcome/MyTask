@@ -24,6 +24,7 @@
 		2C61DCA014EBF64300F50200 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DCA214EBF64300F50200 /* TaskController.m */; };
 		2C61DCC614ECE88E00F50200 /* MyTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DCC414ECE88E00F50200 /* MyTaskController.m */; };
 		2C61DCC714ECE88E00F50200 /* MyTaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DCC514ECE88E00F50200 /* MyTaskController.xib */; };
+		2CAE5BFF14ED36CE0041D5B5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */; };
 		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
 		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
 		2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */; };
@@ -95,6 +96,7 @@
 		2C61DCC314ECE88E00F50200 /* MyTaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTaskController.h; sourceTree = "<group>"; };
 		2C61DCC414ECE88E00F50200 /* MyTaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTaskController.m; sourceTree = "<group>"; };
 		2C61DCC514ECE88E00F50200 /* MyTaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTaskController.xib; sourceTree = "<group>"; };
+		2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAE5BFF14ED36CE0041D5B5 /* AddressBookUI.framework in Frameworks */,
 				2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */,
 				F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */,
 				F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */,
@@ -281,6 +284,7 @@
 		F3FBE92614D79B2800CF86BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */,
 				2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */,
 				F3FBE92714D79B2800CF86BA /* UIKit.framework */,
 				F3FBE92914D79B2800CF86BA /* Foundation.framework */,
