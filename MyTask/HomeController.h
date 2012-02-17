@@ -10,6 +10,8 @@
 
 @interface HomeController : UIViewController{
     __weak IBOutlet UIImageView *userImage;
+    __weak IBOutlet UIScrollView *scrollView;
+    
 }
 - (IBAction)gotoAction:(id)sender;
 

@@ -61,7 +61,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.title=@"怪兽电力公司";
-    
+    [scrollView setContentSize:CGSizeMake(320, 470)];
     [self setUserImage];
 }
 
