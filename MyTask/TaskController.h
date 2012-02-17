@@ -14,12 +14,12 @@
     IBOutlet TaskDetailTableView *taskDetailView;
     IBOutlet UITableView *commentView;
     IBOutlet UITableView *childTaskView;
+    UIBarButtonItem *anotherButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil id:(NSString *) theId;
 
 - (IBAction)switchSubView:(id)sender;
 
--(IBAction)onClickSubmitButton:(id)sender;
 
 @end

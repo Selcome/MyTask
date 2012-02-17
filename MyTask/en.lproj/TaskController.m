@@ -42,18 +42,21 @@
             if(currentSubView!=taskDetailView){
                 [currentSubView removeFromSuperview];
                 [self setCurrentView:taskDetailView];
+                self.navigationItem.rightBarButtonItem=anotherButton;
             }
             break;
         case 1:
             if(currentSubView!=commentView){
                 [currentSubView removeFromSuperview];
                 [self setCurrentView:commentView];
+                self.navigationItem.rightBarButtonItem=nil;
             }
             break;
         case 2:
             if(currentSubView!=childTaskView){
                 [currentSubView removeFromSuperview];
                 [self setCurrentView:childTaskView];
+                self.navigationItem.rightBarButtonItem=nil;
             }
             break;
         default:
@@ -80,6 +83,9 @@
     
     [self setCurrentView:taskDetailView];
     
+     anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain 
+                                                    target:self action:@selector(onClickSubmitButton:)];          
+    self.navigationItem.rightBarButtonItem = anotherButton; 
 }
 
 - (void)viewDidUnload
@@ -99,7 +105,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(IBAction)onClickSubmitButton:(id)sender
+-(void)onClickSubmitButton:(id)sender
 {
     [[DataManager shareInstance] deleteActivity:activity];
      [self.navigationController popViewControllerAnimated:YES];

@@ -103,7 +103,6 @@
         case 4:
         {
             ActivityController *activityController=[[ActivityController alloc] initWithNibName:@"ActivityController" bundle:nil];
-            NSLog(@">>>>>>>>>>>>>>>>>>>>>>>>>>>>>=%@",activityController);
             [self.navigationController pushViewController:activityController animated:YES];
             activityController.navigationItem.title=@"我的任务";
             break;
