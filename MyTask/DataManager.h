@@ -16,4 +16,6 @@
 
 -(NSDictionary *)getAllActivities;
 
+-(void)deleteActivity:(id)activity;
+
 @end

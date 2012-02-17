@@ -12,7 +12,6 @@
 @implementation DataManager{
     NSMutableArray *activities;
 }
-
 +(id)shareInstance{
     static DataManager *manager=nil;
     
@@ -68,7 +67,7 @@
 //        /*
         HttpRequest *httpRequest=[[HttpRequest alloc] init];
         NSError *error;
-       activities=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
+        [activities addObjectsFromArray:[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error]];
 //         */
         /*
         //使用plist 
@@ -136,5 +135,9 @@
          [dic setObject:array forKey:crateTime];
      }
     return dic;
+}
+-(void)deleteActivity:(id)activity
+{
+    [activities removeObject:activity];
 }
 @end

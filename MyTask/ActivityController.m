@@ -86,6 +86,7 @@
 {
     [super viewWillAppear:animated];
     activities=[[DataManager shareInstance] getAllActivities];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated

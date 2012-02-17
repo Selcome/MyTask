@@ -101,6 +101,7 @@
 
 -(IBAction)onClickSubmitButton:(id)sender
 {
+    [[DataManager shareInstance] deleteActivity:activity];
      [self.navigationController popViewControllerAnimated:YES];
 }
 @end
