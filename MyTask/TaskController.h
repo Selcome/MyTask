@@ -20,4 +20,6 @@
 
 - (IBAction)switchSubView:(id)sender;
 
+-(IBAction)onClickSubmitButton:(id)sender;
+
 @end

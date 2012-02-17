@@ -79,6 +79,7 @@
     taskDetailView.activity=activity;
     
     [self setCurrentView:taskDetailView];
+    
 }
 
 - (void)viewDidUnload
@@ -98,4 +99,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction)onClickSubmitButton:(id)sender
+{
+     [self.navigationController popViewControllerAnimated:YES];
+}
 @end
