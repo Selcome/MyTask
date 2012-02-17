@@ -12,8 +12,8 @@
 
 +(id)shareInstance;
 
--(NSArray *)getAllActivities;
-
 -(NSDictionary *)getActivity:(NSString *)id;
+
+-(NSDictionary *)getAllActivities;
 
 @end

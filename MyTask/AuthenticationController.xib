@@ -211,7 +211,7 @@
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<array key="IBUIViewControllers">
+					<array class="NSMutableArray" key="IBUIViewControllers">
 						<object class="IBUIViewController" id="718349052">
 							<array key="IBUIToolbarItems" id="0"/>
 							<object class="IBUINavigationItem" key="IBUINavigationItem" id="434689430">
@@ -354,7 +354,7 @@
 							<bool key="IBUIMultipleTouchEnabled">YES</bool>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
-						<array key="IBUIViewControllers">
+						<array class="NSMutableArray" key="IBUIViewControllers">
 							<object class="IBUIViewController" id="925552815">
 								<reference key="IBUIToolbarItems" ref="0"/>
 								<object class="IBUINavigationItem" key="IBUINavigationItem" id="892746455">
