@@ -17,16 +17,16 @@
 @end
 
 @implementation ActivityController{
-    NSArray *activities;
+    NSDictionary *activities;
 }
 
 -(NSArray *)getActivities:(int) section{
-    NSDictionary *dictionary=[activities objectAtIndex:section];
-    return [[dictionary allValues] objectAtIndex:0];
+    NSString *key=[[activities allKeys] objectAtIndex:section];
+    return [activities objectForKey:key];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return [[[activities objectAtIndex:section] allKeys] objectAtIndex:0];
+    return [[activities allKeys] objectAtIndex:section];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
@@ -86,6 +86,7 @@
 {
     [super viewWillAppear:animated];
     activities=[[DataManager shareInstance] getAllActivities];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -114,7 +115,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return [activities count];
+    return [[activities allKeys] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -12,7 +12,6 @@
 @implementation DataManager{
     NSMutableArray *activities;
 }
-
 +(id)shareInstance{
     static DataManager *manager=nil;
     
@@ -66,7 +65,7 @@
 //        /*
         HttpRequest *httpRequest=[[HttpRequest alloc] init];
         NSError *error;
-       activities=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
+        [activities addObjectsFromArray:[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error]];
 //         */
         /*
         //使用plist 
@@ -86,28 +85,57 @@
     }
     return nil;
 }
-
+/**
 -(NSArray *)getAllActivities{
     NSMutableArray *allActivities=[NSMutableArray array];
-    
     //2012-2-5
     NSMutableArray *activitiesArray=[NSMutableArray array];
-    NSMutableDictionary *activitiesDirectory=[[NSMutableDictionary alloc] initWithObjectsAndKeys:activitiesArray ,@"2012-2-5", nil];
-    [allActivities addObject:activitiesDirectory];
-    
-    [activitiesArray addObject:[activities objectAtIndex:4]];
-    [activitiesArray addObject:[activities objectAtIndex:3]];
+//   
+//    
+//    [activitiesArray addObject:[activities objectAtIndex:4]];
+//    [activitiesArray addObject:[activities objectAtIndex:3]];
     
     //2012-2-4
-    activitiesArray=[NSMutableArray array];
-    activitiesDirectory=[[NSMutableDictionary alloc] initWithObjectsAndKeys:activitiesArray ,@"2012-2-4", nil];
-    [allActivities addObject:activitiesDirectory];
+//    activitiesArray=[NSMutableArray array];
+//    activitiesDirectory=[[NSMutableDictionary alloc] initWithObjectsAndKeys:activitiesArray ,@"2012-2-4", nil];
+//    [allActivities addObject:activitiesDirectory];
+//    
+//    [activitiesArray addObject:[activities objectAtIndex:2]];
+//    [activitiesArray addObject:[activities objectAtIndex:1]];
+//    [activitiesArray addObject:[activities objectAtIndex:0]];
     
-    [activitiesArray addObject:[activities objectAtIndex:2]];
-    [activitiesArray addObject:[activities objectAtIndex:1]];
-    [activitiesArray addObject:[activities objectAtIndex:0]];
-    
+    for (int i=0;i<[activities count];i++) {
+        if (i==0) {
+            NSMutableDictionary *activitiesDirectory=[[NSMutableDictionary alloc] initWithObjectsAndKeys:activitiesArray ,@"2012-2-5", nil];
+            [allActivities addObject:activitiesDirectory];  
+        }
+        if (i==2) {
+            [activitiesArray removeAllObjects];
+            NSMutableDictionary *activitiesDirectory=[[NSMutableDictionary alloc] initWithObjectsAndKeys:activitiesArray ,@"2012-2-4", nil];
+            [allActivities addObject:activitiesDirectory];  
+        }
+       [activitiesArray addObject:[activities objectAtIndex:i]];
+    }
     return allActivities;
 }
-
+*/
+-(NSDictionary *)getAllActivities
+{
+    NSMutableDictionary *dic=[NSMutableDictionary dictionary];
+     for (int i=0;i<[activities count];i++) {
+         NSDictionary *activitiesDir=[activities objectAtIndex:i];
+         NSString *crateTime=[activitiesDir objectForKey:@"createTime"];
+         NSMutableArray *array=[dic objectForKey:crateTime];
+         if (!array) {
+             array=[NSMutableArray array];
+         }
+         [array addObject:activitiesDir];
+         [dic setObject:array forKey:crateTime];
+     }
+    return dic;
+}
+-(void)deleteActivity:(id)activity
+{
+    [activities removeObject:activity];
+}
 @end
