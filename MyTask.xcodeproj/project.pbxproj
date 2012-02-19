@@ -14,6 +14,11 @@
 		2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C30204314ED339300761FE0 /* SearchResultController.xib */; };
 		2C56045914F103F700F6FDFC /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56045714F103F700F6FDFC /* TaskDetailTableViewCell.m */; };
 		2C56045A14F103F700F6FDFC /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C56045814F103F700F6FDFC /* TaskDetailTableViewCell.xib */; };
+		2C56046A14F1055100F6FDFC /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56046814F1055100F6FDFC /* TaskController.m */; };
+		2C56046B14F1055100F6FDFC /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C56046914F1055100F6FDFC /* TaskController.xib */; };
+		2C56047714F105C400F6FDFC /* TaskDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56047514F105C400F6FDFC /* TaskDetailTableView.m */; };
+		2C56047B14F1062600F6FDFC /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C56047914F1062600F6FDFC /* pinyin.c */; };
+		2C56049F14F1380B00F6FDFC /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56049E14F1380B00F6FDFC /* HttpRequest.m */; };
 		2C61DC8014EBAE8E00F50200 /* ColleagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */; };
 		2C61DC8114EBAE8E00F50200 /* ColleagueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC7A14EBAE8E00F50200 /* ColleagueTableViewCell.m */; };
 		2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */; };
@@ -83,6 +88,15 @@
 		2C56045614F103F700F6FDFC /* TaskDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableViewCell.h; sourceTree = "<group>"; };
 		2C56045714F103F700F6FDFC /* TaskDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableViewCell.m; sourceTree = "<group>"; };
 		2C56045814F103F700F6FDFC /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
+		2C56046714F1055100F6FDFC /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
+		2C56046814F1055100F6FDFC /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
+		2C56046914F1055100F6FDFC /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
+		2C56047514F105C400F6FDFC /* TaskDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableView.m; sourceTree = "<group>"; };
+		2C56047614F105C400F6FDFC /* TaskDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableView.h; sourceTree = "<group>"; };
+		2C56047914F1062600F6FDFC /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		2C56047A14F1062600F6FDFC /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		2C56049D14F1380B00F6FDFC /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		2C56049E14F1380B00F6FDFC /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueTableViewCell.xib; sourceTree = "<group>"; };
 		2C61DC7A14EBAE8E00F50200 /* ColleagueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueTableViewCell.m; sourceTree = "<group>"; };
 		2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueController.xib; sourceTree = "<group>"; };
@@ -176,11 +190,25 @@
 		2C56045514F103E500F6FDFC /* task */ = {
 			isa = PBXGroup;
 			children = (
+				2C56047514F105C400F6FDFC /* TaskDetailTableView.m */,
+				2C56047614F105C400F6FDFC /* TaskDetailTableView.h */,
+				2C56046714F1055100F6FDFC /* TaskController.h */,
+				2C56046814F1055100F6FDFC /* TaskController.m */,
+				2C56046914F1055100F6FDFC /* TaskController.xib */,
 				2C56045614F103F700F6FDFC /* TaskDetailTableViewCell.h */,
 				2C56045714F103F700F6FDFC /* TaskDetailTableViewCell.m */,
 				2C56045814F103F700F6FDFC /* TaskDetailTableViewCell.xib */,
 			);
 			name = task;
+			sourceTree = "<group>";
+		};
+		2C56047C14F1064E00F6FDFC /* http */ = {
+			isa = PBXGroup;
+			children = (
+				2C56049D14F1380B00F6FDFC /* HttpRequest.h */,
+				2C56049E14F1380B00F6FDFC /* HttpRequest.m */,
+			);
+			name = http;
 			sourceTree = "<group>";
 		};
 		2C61DC8514EBB3B900F50200 /* setting */ = {
@@ -196,6 +224,8 @@
 		2C61DC8B14EBCA0F00F50200 /* favorites */ = {
 			isa = PBXGroup;
 			children = (
+				2C56047914F1062600F6FDFC /* pinyin.c */,
+				2C56047A14F1062600F6FDFC /* pinyin.h */,
 				F32EED4F14DBC8F800BCCBD6 /* TaskController.h */,
 				2C61DCA214EBF64300F50200 /* TaskController.m */,
 				F32EED5114DBC8F800BCCBD6 /* TaskController.xib */,
@@ -278,6 +308,7 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				2C56047C14F1064E00F6FDFC /* http */,
 				2C56045514F103E500F6FDFC /* task */,
 				2CF0E87714F0E76600A78435 /* home */,
 				2C61DC8514EBB3B900F50200 /* setting */,
@@ -441,6 +472,7 @@
 				2C9BB3D714F0E84900290A3C /* user_default.png in Resources */,
 				2C9BB3D814F0E84900290A3C /* sullivan.png in Resources */,
 				2C56045A14F103F700F6FDFC /* TaskDetailTableViewCell.xib in Resources */,
+				2C56046B14F1055100F6FDFC /* TaskController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +505,10 @@
 				2C1EBF4514F0C7760063EDC5 /* AddFavoritesController.m in Sources */,
 				2CF0E84914F0D02500A78435 /* pinyin.c in Sources */,
 				2C56045914F103F700F6FDFC /* TaskDetailTableViewCell.m in Sources */,
+				2C56046A14F1055100F6FDFC /* TaskController.m in Sources */,
+				2C56047714F105C400F6FDFC /* TaskDetailTableView.m in Sources */,
+				2C56047B14F1062600F6FDFC /* pinyin.c in Sources */,
+				2C56049F14F1380B00F6FDFC /* HttpRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +612,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiao ran (TE8FBG5AHZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,6 +627,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiao ran (TE8FBG5AHZ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyTask/MyTask-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MyTask/MyTask-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
