@@ -52,7 +52,7 @@
     [userNameField resignFirstResponder];
     [passWordField resignFirstResponder];
     if (userNameField.text.length&&passWordField.text.length) {
-          NSLog(@"点击进入系统");
+        self.view.window.rootViewController=tabBarController;
     }else{
         UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"警告" message:@"用户名或密码不能为空！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [alertView show];

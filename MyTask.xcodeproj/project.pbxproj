@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C15EFDB14F0EB330061D9B7 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C15EFDA14F0EB330061D9B7 /* sullivan.png */; };
+		2C15EFED14F0EC9C0061D9B7 /* ActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C15EFEB14F0EC9C0061D9B7 /* ActivityController.m */; };
+		2C15EFEE14F0EC9C0061D9B7 /* ActivityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C15EFEC14F0EC9C0061D9B7 /* ActivityController.xib */; };
 		2C30204414ED339300761FE0 /* SearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30204214ED339300761FE0 /* SearchResultController.m */; };
 		2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C30204314ED339300761FE0 /* SearchResultController.xib */; };
 		2C61DC8014EBAE8E00F50200 /* ColleagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */; };
@@ -63,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		2C15EFDA14F0EB330061D9B7 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
+		2C15EFEA14F0EC9C0061D9B7 /* ActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityController.h; sourceTree = "<group>"; };
+		2C15EFEB14F0EC9C0061D9B7 /* ActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityController.m; sourceTree = "<group>"; };
+		2C15EFEC14F0EC9C0061D9B7 /* ActivityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityController.xib; sourceTree = "<group>"; };
 		2C30204114ED339300761FE0 /* SearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultController.h; sourceTree = "<group>"; };
 		2C30204214ED339300761FE0 /* SearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultController.m; sourceTree = "<group>"; };
 		2C30204314ED339300761FE0 /* SearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultController.xib; sourceTree = "<group>"; };
@@ -343,6 +348,9 @@
 		F3FBE9BD14DADB8900CF86BA /* activity */ = {
 			isa = PBXGroup;
 			children = (
+				2C15EFEA14F0EC9C0061D9B7 /* ActivityController.h */,
+				2C15EFEB14F0EC9C0061D9B7 /* ActivityController.m */,
+				2C15EFEC14F0EC9C0061D9B7 /* ActivityController.xib */,
 				2CDAE8E614E2535C0092DD10 /* task_small.png */,
 				2CDAE8E414E253460092DD10 /* posted_small.png */,
 				2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */,
@@ -435,6 +443,7 @@
 				2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */,
 				2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */,
 				2C15EFDB14F0EB330061D9B7 /* sullivan.png in Resources */,
+				2C15EFEE14F0EC9C0061D9B7 /* ActivityController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +469,7 @@
 				2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */,
 				2C30204414ED339300761FE0 /* SearchResultController.m in Sources */,
 				2C9BB3EA14F0E90A00290A3C /* HomeController.m in Sources */,
+				2C15EFED14F0EC9C0061D9B7 /* ActivityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
