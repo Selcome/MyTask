@@ -7,7 +7,7 @@
 //
 
 #import "AuthenticationController.h"
-
+#import "DataManager.h"
 @implementation AuthenticationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil 
@@ -55,7 +55,7 @@
     [userNameField resignFirstResponder];
     [passWordField resignFirstResponder];
     if (userNameField.text.length&&passWordField.text.length) {
-        if ([userNameField.text isEqual:@"Sullivan"]&&[passWordField.text isEqual:@"password"]) {
+        if ([[DataManager shareInstance] checkName:userNameField.text password:passWordField.text]) {
              self.view.window.rootViewController=tabBarController;
         }else{
             UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"警告" message:@"用户名或密码不正确！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];

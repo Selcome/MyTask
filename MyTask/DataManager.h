@@ -10,5 +10,5 @@
 @interface DataManager : NSObject
 
 +(id)shareInstance;
-
+-(BOOL)checkName:(NSString *)userName password:(NSString *)password;
 @end

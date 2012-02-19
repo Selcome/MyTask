@@ -21,4 +21,8 @@
     }
     return self;
 }
+-(BOOL)checkName:(NSString *)userName password:(NSString *)password
+{
+    return [userName isEqual:@"Sullivan"]&&[password isEqual:@"password"];
+}
 @end
