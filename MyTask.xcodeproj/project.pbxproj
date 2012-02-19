@@ -21,6 +21,15 @@
 		2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC9914EBF63800F50200 /* SearchController.xib */; };
 		2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9C14EBF63F00F50200 /* SearchController.m */; };
 		2C61DCA014EBF64300F50200 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DCA214EBF64300F50200 /* TaskController.m */; };
+		2C9BB3E914F0E90A00290A3C /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3DE14F0E90A00290A3C /* HomeController.xib */; };
+		2C9BB3EA14F0E90A00290A3C /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BB3DF14F0E90A00290A3C /* HomeController.m */; };
+		2C9BB3EB14F0E90A00290A3C /* activity_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E014F0E90A00290A3C /* activity_big.png */; };
+		2C9BB3EC14F0E90A00290A3C /* calendar_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E114F0E90A00290A3C /* calendar_big.png */; };
+		2C9BB3ED14F0E90A00290A3C /* account_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E214F0E90A00290A3C /* account_big.png */; };
+		2C9BB3EE14F0E90A00290A3C /* tasks_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E414F0E90A00290A3C /* tasks_big.png */; };
+		2C9BB3EF14F0E90A00290A3C /* search_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E514F0E90A00290A3C /* search_big.png */; };
+		2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E614F0E90A00290A3C /* workspace_big.png */; };
+		2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E714F0E90A00290A3C /* user_default.png */; };
 		2CAE5BFF14ED36CE0041D5B5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */; };
 		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
 		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
@@ -32,7 +41,6 @@
 		2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */; };
 		2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C014E4C3E30007B2E1 /* HttpRequest.m */; };
 		2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C214E4C41B0007B2E1 /* DataManager.m */; };
-		2CF0E87614F0E6AE00A78435 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0E87514F0E6AE00A78435 /* sullivan.png */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
 		F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */; };
 		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
@@ -74,6 +82,16 @@
 		2C61DC9B14EBF63F00F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/SearchController.m; sourceTree = "<group>"; };
 		2C61DCA114EBF64300F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/TaskController.m; sourceTree = "<group>"; };
 		2C61DCA314EBF67E00F50200 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SearchController.xib"; sourceTree = "<group>"; };
+		2C9BB3DE14F0E90A00290A3C /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		2C9BB3DF14F0E90A00290A3C /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		2C9BB3E014F0E90A00290A3C /* activity_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_big.png; sourceTree = "<group>"; };
+		2C9BB3E114F0E90A00290A3C /* calendar_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_big.png; sourceTree = "<group>"; };
+		2C9BB3E214F0E90A00290A3C /* account_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = account_big.png; sourceTree = "<group>"; };
+		2C9BB3E314F0E90A00290A3C /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		2C9BB3E414F0E90A00290A3C /* tasks_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tasks_big.png; sourceTree = "<group>"; };
+		2C9BB3E514F0E90A00290A3C /* search_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_big.png; sourceTree = "<group>"; };
+		2C9BB3E614F0E90A00290A3C /* workspace_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workspace_big.png; sourceTree = "<group>"; };
+		2C9BB3E714F0E90A00290A3C /* user_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_default.png; sourceTree = "<group>"; };
 		2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -88,7 +106,6 @@
 		2CE462BF14E4C3E30007B2E1 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		2CE462C014E4C3E30007B2E1 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		2CE462C214E4C41B0007B2E1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		2CF0E87514F0E6AE00A78435 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
 		F32EED5114DBC8F800BCCBD6 /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
 		F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -190,6 +207,16 @@
 		2CF0E87714F0E76600A78435 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				2C9BB3DE14F0E90A00290A3C /* HomeController.xib */,
+				2C9BB3DF14F0E90A00290A3C /* HomeController.m */,
+				2C9BB3E014F0E90A00290A3C /* activity_big.png */,
+				2C9BB3E114F0E90A00290A3C /* calendar_big.png */,
+				2C9BB3E214F0E90A00290A3C /* account_big.png */,
+				2C9BB3E314F0E90A00290A3C /* HomeController.h */,
+				2C9BB3E414F0E90A00290A3C /* tasks_big.png */,
+				2C9BB3E514F0E90A00290A3C /* search_big.png */,
+				2C9BB3E614F0E90A00290A3C /* workspace_big.png */,
+				2C9BB3E714F0E90A00290A3C /* user_default.png */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -252,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				2CF0E87714F0E76600A78435 /* home */,
-				2CF0E87514F0E6AE00A78435 /* sullivan.png */,
 				2C61DC8514EBB3B900F50200 /* setting */,
 				2C61DC9114EBD13500F50200 /* search */,
 				2C61DC8B14EBCA0F00F50200 /* favorites */,
@@ -397,7 +423,14 @@
 				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
 				2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */,
 				2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */,
-				2CF0E87614F0E6AE00A78435 /* sullivan.png in Resources */,
+				2C9BB3E914F0E90A00290A3C /* HomeController.xib in Resources */,
+				2C9BB3EB14F0E90A00290A3C /* activity_big.png in Resources */,
+				2C9BB3EC14F0E90A00290A3C /* calendar_big.png in Resources */,
+				2C9BB3ED14F0E90A00290A3C /* account_big.png in Resources */,
+				2C9BB3EE14F0E90A00290A3C /* tasks_big.png in Resources */,
+				2C9BB3EF14F0E90A00290A3C /* search_big.png in Resources */,
+				2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */,
+				2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +455,7 @@
 				2C61DC8F14EBCA3200F50200 /* FavoritesController.m in Sources */,
 				2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */,
 				2C30204414ED339300761FE0 /* SearchResultController.m in Sources */,
+				2C9BB3EA14F0E90A00290A3C /* HomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

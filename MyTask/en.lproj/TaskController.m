@@ -35,32 +35,32 @@
 }
 
 - (IBAction)switchSubView:(id)sender {
-    UISegmentedControl *segment=(UISegmentedControl *)sender;
-    switch ([segment selectedSegmentIndex]) {
-        case 0:
-            if(currentSubView!=taskDetailView){
-                [currentSubView removeFromSuperview];
-                [self setCurrentView:taskDetailView];
-                self.navigationItem.rightBarButtonItem=anotherButton;
-            }
-            break;
-        case 1:
-            if(currentSubView!=commentView){
-                [currentSubView removeFromSuperview];
-                [self setCurrentView:commentView];
-                self.navigationItem.rightBarButtonItem=nil;
-            }
-            break;
-        case 2:
-            if(currentSubView!=childTaskView){
-                [currentSubView removeFromSuperview];
-                [self setCurrentView:childTaskView];
-                self.navigationItem.rightBarButtonItem=nil;
-            }
-            break;
-        default:
-            break;
-    }
+//    UISegmentedControl *segment=(UISegmentedControl *)sender;
+//    switch ([segment selectedSegmentIndex]) {
+//        case 0:
+//            if(currentSubView!=taskDetailView){
+//                [currentSubView removeFromSuperview];
+//                [self setCurrentView:taskDetailView];
+//                self.navigationItem.rightBarButtonItem=anotherButton;
+//            }
+//            break;
+//        case 1:
+//            if(currentSubView!=commentView){
+//                [currentSubView removeFromSuperview];
+//                [self setCurrentView:commentView];
+//                self.navigationItem.rightBarButtonItem=nil;
+//            }
+//            break;
+//        case 2:
+//            if(currentSubView!=childTaskView){
+//                [currentSubView removeFromSuperview];
+//                [self setCurrentView:childTaskView];
+//                self.navigationItem.rightBarButtonItem=nil;
+//            }
+//            break;
+//        default:
+//            break;
+//    }
 }
 
 - (void)didReceiveMemoryWarning
