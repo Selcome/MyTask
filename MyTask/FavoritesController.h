@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FavoritesData.h"
 @interface FavoritesController : UIViewController
 {
     __weak IBOutlet UITableView *rootTableView;
     NSMutableDictionary *favoritesDictionary;
+    
+    FavoritesData *favoritesData;
 }
 @end

@@ -8,22 +8,14 @@
 
 #import "FavoritesController.h"
 #import "FavoritesData.h"
+#import "AddFavoritesController.h"
 @implementation FavoritesController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-       
-    }
-    return self;
-}
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        FavoritesData *favoritesData=[[FavoritesData alloc] init];
-        favoritesDictionary=[favoritesData getFavoritesDir];
+        favoritesData=[[FavoritesData alloc] init];
+        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onClickAddButton:)];
+        self.navigationItem.rightBarButtonItem=anotherButton;
     }
     return self;
 }
@@ -35,6 +27,13 @@
    
 }
 
+-(void)onClickAddButton:(UIBarButtonItem *)barButtonItem
+{
+    AddFavoritesController *addFavoritesController=[[AddFavoritesController alloc] initWithNibName:@"AddFavoritesController" bundle:nil];
+    [addFavoritesController setFavoritesData:favoritesData];
+    [self.navigationController pushViewController:addFavoritesController animated:YES];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -44,7 +43,12 @@
     // Do any additional setup after loading the view from its nib.
     
 }
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    favoritesDictionary=[favoritesData getFavoritesDir];
+    [rootTableView reloadData];
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -81,7 +85,8 @@
     NSString *key=[[favoritesDictionary allKeys] objectAtIndex:indexPath.section];
     NSArray *array=[favoritesDictionary objectForKey:key];
     cell.textLabel.text=[[array objectAtIndex:indexPath.row] objectForKey:@"name"];
-        return cell;
+    cell.detailTextLabel.text=[[array objectAtIndex:indexPath.row] objectForKey:@"sex"];
+    return cell;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *key=[[favoritesDictionary allKeys] objectAtIndex:section];
@@ -96,7 +101,6 @@
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath 
 { 
-    FavoritesData *favoritesData=[[FavoritesData alloc] init];
     NSString *key=[[favoritesDictionary allKeys] objectAtIndex:indexPath.section];
     NSArray *array=[favoritesDictionary objectForKey:key];
     [favoritesData deleteFavorites:[array objectAtIndex:indexPath.row]];

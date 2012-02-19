@@ -61,4 +61,8 @@
 {
     [favoritesArray removeObject:dir];
 }
+-(void)addFavorites:(NSDictionary *)dir
+{
+    [favoritesArray addObject:dir];
+}
 @end

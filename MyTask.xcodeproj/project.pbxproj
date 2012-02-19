@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C1EBF3C14F0932A0063EDC5 /* FavoritesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1EBF3B14F0932A0063EDC5 /* FavoritesData.m */; };
+		2C1EBF4514F0C7760063EDC5 /* AddFavoritesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1EBF4314F0C7760063EDC5 /* AddFavoritesController.m */; };
+		2C1EBF4614F0C7760063EDC5 /* AddFavoritesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1EBF4414F0C7760063EDC5 /* AddFavoritesController.xib */; };
 		2C30204414ED339300761FE0 /* SearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30204214ED339300761FE0 /* SearchResultController.m */; };
 		2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C30204314ED339300761FE0 /* SearchResultController.xib */; };
 		2C61DC8014EBAE8E00F50200 /* ColleagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */; };
@@ -34,6 +36,7 @@
 		2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */; };
 		2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C014E4C3E30007B2E1 /* HttpRequest.m */; };
 		2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C214E4C41B0007B2E1 /* DataManager.m */; };
+		2CF0E84914F0D02500A78435 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0E84714F0D02500A78435 /* pinyin.c */; };
 		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
 		F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */; };
 		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
@@ -72,6 +75,9 @@
 /* Begin PBXFileReference section */
 		2C1EBF3A14F0932A0063EDC5 /* FavoritesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesData.h; sourceTree = "<group>"; };
 		2C1EBF3B14F0932A0063EDC5 /* FavoritesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesData.m; sourceTree = "<group>"; };
+		2C1EBF4214F0C7760063EDC5 /* AddFavoritesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFavoritesController.h; sourceTree = "<group>"; };
+		2C1EBF4314F0C7760063EDC5 /* AddFavoritesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFavoritesController.m; sourceTree = "<group>"; };
+		2C1EBF4414F0C7760063EDC5 /* AddFavoritesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFavoritesController.xib; sourceTree = "<group>"; };
 		2C30204114ED339300761FE0 /* SearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultController.h; sourceTree = "<group>"; };
 		2C30204214ED339300761FE0 /* SearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultController.m; sourceTree = "<group>"; };
 		2C30204314ED339300761FE0 /* SearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultController.xib; sourceTree = "<group>"; };
@@ -108,6 +114,8 @@
 		2CE462BF14E4C3E30007B2E1 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		2CE462C014E4C3E30007B2E1 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		2CE462C214E4C41B0007B2E1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		2CF0E84714F0D02500A78435 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		2CF0E84814F0D02500A78435 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
 		F32EED5114DBC8F800BCCBD6 /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
 		F380BFFE14DCF46700880B96 /* TaskDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableView.h; sourceTree = "<group>"; };
@@ -182,11 +190,16 @@
 		2C61DC8B14EBCA0F00F50200 /* favorites */ = {
 			isa = PBXGroup;
 			children = (
+				2CF0E84714F0D02500A78435 /* pinyin.c */,
+				2CF0E84814F0D02500A78435 /* pinyin.h */,
 				2C61DC8C14EBCA3200F50200 /* FavoritesController.h */,
 				2C61DC8D14EBCA3200F50200 /* FavoritesController.m */,
 				2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */,
 				2C1EBF3A14F0932A0063EDC5 /* FavoritesData.h */,
 				2C1EBF3B14F0932A0063EDC5 /* FavoritesData.m */,
+				2C1EBF4214F0C7760063EDC5 /* AddFavoritesController.h */,
+				2C1EBF4314F0C7760063EDC5 /* AddFavoritesController.m */,
+				2C1EBF4414F0C7760063EDC5 /* AddFavoritesController.xib */,
 			);
 			name = favorites;
 			sourceTree = "<group>";
@@ -471,6 +484,7 @@
 				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
 				2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */,
 				2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */,
+				2C1EBF4614F0C7760063EDC5 /* AddFavoritesController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +513,8 @@
 				2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */,
 				2C30204414ED339300761FE0 /* SearchResultController.m in Sources */,
 				2C1EBF3C14F0932A0063EDC5 /* FavoritesData.m in Sources */,
+				2C1EBF4514F0C7760063EDC5 /* AddFavoritesController.m in Sources */,
+				2CF0E84914F0D02500A78435 /* pinyin.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

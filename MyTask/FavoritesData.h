@@ -11,4 +11,5 @@
 @interface FavoritesData : NSObject
 -(NSMutableDictionary *)getFavoritesDir;
 -(void)deleteFavorites:(NSDictionary *)dir;
+-(void)addFavorites:(NSDictionary *)dir;
 @end
