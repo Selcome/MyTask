@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C15EFDB14F0EB330061D9B7 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C15EFDA14F0EB330061D9B7 /* sullivan.png */; };
 		2C30204414ED339300761FE0 /* SearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C30204214ED339300761FE0 /* SearchResultController.m */; };
 		2C30204514ED339300761FE0 /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C30204314ED339300761FE0 /* SearchResultController.xib */; };
 		2C61DC8014EBAE8E00F50200 /* ColleagueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7914EBAE8E00F50200 /* ColleagueTableViewCell.xib */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C15EFDA14F0EB330061D9B7 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		2C30204114ED339300761FE0 /* SearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultController.h; sourceTree = "<group>"; };
 		2C30204214ED339300761FE0 /* SearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultController.m; sourceTree = "<group>"; };
 		2C30204314ED339300761FE0 /* SearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultController.xib; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				F3FBE93F14D79C4500CF86BA /* icon-72.png */,
+				2C15EFDA14F0EB330061D9B7 /* sullivan.png */,
 				F3FBE94014D79C4500CF86BA /* icon.png */,
 				F3FBE94114D79C4500CF86BA /* icon@2x.png */,
 				F3FBE94214D79C4500CF86BA /* Default.png */,
@@ -431,6 +434,7 @@
 				2C9BB3EF14F0E90A00290A3C /* search_big.png in Resources */,
 				2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */,
 				2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */,
+				2C15EFDB14F0EB330061D9B7 /* sullivan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

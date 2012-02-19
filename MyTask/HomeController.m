@@ -32,8 +32,8 @@
     
     //userImage.image=[UIImage imageNamed:@"sullivan.png"];
     userImage.image=[UIImage imageWithContentsOfFile:newImagePath];
-    
-    NSLog(@"set user image: %@",imagePath);
+//    
+//    NSLog(@"set user image: %@",imagePath);
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
