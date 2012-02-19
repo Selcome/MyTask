@@ -7,22 +7,16 @@
 //
 
 #import "ColleagueController.h"
-<<<<<<< HEAD
-=======
 #import "ColleagueTableViewCell.h"
->>>>>>> wangjun_MyTask
 @implementation ColleagueController
 
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-<<<<<<< HEAD
-=======
-        //使用plist 
-        NSString *filename= [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"colleague.plist"]; 
-        //读文件
-        colleagueArray= [[NSDictionary dictionaryWithContentsOfFile:filename] objectForKey:@"colleague"];
->>>>>>> wangjun_MyTask
+//        //使用plist 
+//        NSString *filename= [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"colleague.plist"]; 
+//        //读文件
+//        colleagueArray= [[NSDictionary dictionaryWithContentsOfFile:filename] objectForKey:@"colleague"];
     }
     return self;
 }
@@ -55,8 +49,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-<<<<<<< HEAD
-=======
 #pragma mark - Table view data source
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -81,5 +73,4 @@
 {
     return 71;
 }
->>>>>>> wangjun_MyTask
 @end

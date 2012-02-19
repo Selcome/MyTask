@@ -7,10 +7,7 @@
 //
 
 #import "SearchController.h"
-<<<<<<< HEAD
-=======
 #import "SearchResultController.h"
->>>>>>> wangjun_MyTask
 @implementation SearchController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -51,8 +48,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-<<<<<<< HEAD
-=======
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 1;
@@ -79,5 +74,4 @@
     UITableView *rootTableView=(UITableView *)searchDisplayController.searchResultsTableView;
     [rootTableView reloadData];
 }
->>>>>>> wangjun_MyTask
 @end

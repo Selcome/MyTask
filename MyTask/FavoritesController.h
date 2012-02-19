@@ -7,10 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-<<<<<<< HEAD
-@interface FavoritesController : UIViewController
-
-=======
 #import "FavoritesData.h"
 @interface FavoritesController : UIViewController
 {
@@ -19,5 +15,4 @@
     
     FavoritesData *favoritesData;
 }
->>>>>>> wangjun_MyTask
 @end

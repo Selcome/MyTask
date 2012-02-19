@@ -11,15 +11,10 @@
 			<string key="NS.object.0">931</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-<<<<<<< HEAD
-			<string>IBProxyObject</string>
-			<string>IBUIView</string>
-=======
 			<string>IBUISearchDisplayController</string>
 			<string>IBUIView</string>
 			<string>IBUISearchBar</string>
 			<string>IBProxyObject</string>
->>>>>>> wangjun_MyTask
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -40,12 +35,6 @@
 			<object class="IBUIView" id="191373211">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
-<<<<<<< HEAD
-				<string key="NSFrame">{{0, 64}, {320, 416}}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
-=======
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUISearchBar" id="1039722598">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -71,7 +60,6 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="1039722598"/>
->>>>>>> wangjun_MyTask
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -82,12 +70,9 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-<<<<<<< HEAD
-=======
 			<object class="IBUISearchDisplayController" id="859420667">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
->>>>>>> wangjun_MyTask
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<array class="NSMutableArray" key="connectionRecords">
@@ -99,8 +84,6 @@
 					</object>
 					<int key="connectionID">3</int>
 				</object>
-<<<<<<< HEAD
-=======
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">searchDisplayController</string>
@@ -157,7 +140,6 @@
 					</object>
 					<int key="connectionID">13</int>
 				</object>
->>>>>>> wangjun_MyTask
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -170,13 +152,9 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
-<<<<<<< HEAD
-						<array class="NSMutableArray" key="children"/>
-=======
 						<array class="NSMutableArray" key="children">
 							<reference ref="1039722598"/>
 						</array>
->>>>>>> wangjun_MyTask
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -190,8 +168,6 @@
 						<reference key="object" ref="975951072"/>
 						<reference key="parent" ref="0"/>
 					</object>
-<<<<<<< HEAD
-=======
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
 						<reference key="object" ref="1039722598"/>
@@ -202,7 +178,6 @@
 						<reference key="object" ref="859420667"/>
 						<reference key="parent" ref="0"/>
 					</object>
->>>>>>> wangjun_MyTask
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -211,11 +186,8 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-<<<<<<< HEAD
-=======
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
->>>>>>> wangjun_MyTask
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>

@@ -7,22 +7,15 @@
 //
 
 #import "FavoritesController.h"
-<<<<<<< HEAD
-=======
 #import "FavoritesData.h"
 #import "AddFavoritesController.h"
->>>>>>> wangjun_MyTask
 @implementation FavoritesController
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-<<<<<<< HEAD
         self.navigationItem.title=@"收藏";
-=======
-        favoritesData=[[FavoritesData alloc] init];
         UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onClickAddButton:)];
         self.navigationItem.rightBarButtonItem=anotherButton;
->>>>>>> wangjun_MyTask
     }
     return self;
 }
@@ -31,17 +24,13 @@
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
-<<<<<<< HEAD
-=======
    
 }
-
 -(void)onClickAddButton:(UIBarButtonItem *)barButtonItem
 {
     AddFavoritesController *addFavoritesController=[[AddFavoritesController alloc] initWithNibName:@"AddFavoritesController" bundle:nil];
     [addFavoritesController setFavoritesData:favoritesData];
     [self.navigationController pushViewController:addFavoritesController animated:YES];
->>>>>>> wangjun_MyTask
 }
 
 #pragma mark - View lifecycle
@@ -49,21 +38,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-<<<<<<< HEAD
-=======
-    self.navigationItem.title=@"收藏";
->>>>>>> wangjun_MyTask
     // Do any additional setup after loading the view from its nib.
     
 }
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-<<<<<<< HEAD
-=======
     favoritesDictionary=[favoritesData getFavoritesDir];
     [rootTableView reloadData];
->>>>>>> wangjun_MyTask
 }
 - (void)viewDidUnload
 {
@@ -77,9 +59,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-<<<<<<< HEAD
-=======
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -140,5 +119,4 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath { 
     return YES; 
 } 
->>>>>>> wangjun_MyTask
 @end

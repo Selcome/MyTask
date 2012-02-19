@@ -7,13 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-<<<<<<< HEAD
-@interface SearchController : UIViewController
-=======
 @interface SearchController : UIViewController<UISearchBarDelegate>
 {
    __weak IBOutlet UISearchDisplayController *searchDisplayController;  
 }
->>>>>>> wangjun_MyTask
 @end
