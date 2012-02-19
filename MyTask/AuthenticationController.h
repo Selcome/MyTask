@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface AuthenticationController : UIViewController{
-    IBOutlet UIViewController *tabBarController;
+    
+    __weak IBOutlet  UITextField *userNameField;
+     __weak IBOutlet UITextField *passWordField;
 }
-
 - (IBAction)login:(id)sender;
 @end
