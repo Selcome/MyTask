@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FavoritesController : UIViewController
-
+{
+    __weak IBOutlet UITableView *rootTableView;
+    NSMutableDictionary *favoritesDictionary;
+}
 @end
