@@ -48,14 +48,13 @@
     for (int i=0; i<[favoritesArray count]; i++) {
         NSDictionary *dir=[favoritesArray objectAtIndex:i];
         NSString *firstName=[dir objectForKey:@"firstName"];
-        NSMutableArray *array=[dir objectForKey:firstName];
+        NSMutableArray *array=[favoritesdir objectForKey:firstName];
         if (!array) {
             array=[NSMutableArray array];
         }
         [array addObject:dir];
         [favoritesdir setValue:array forKey:firstName];
     }
-    NSLog(@"数据结构=%@",favoritesdir);
     return favoritesdir;
 }
 -(void)deleteFavorites:(NSDictionary *)dir
