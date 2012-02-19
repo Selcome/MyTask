@@ -16,7 +16,6 @@
 		2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC8E14EBCA3200F50200 /* FavoritesController.xib */; };
 		2C61DC9714EBF63800F50200 /* SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC9914EBF63800F50200 /* SearchController.xib */; };
 		2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9C14EBF63F00F50200 /* SearchController.m */; };
-		2C61DCA014EBF64300F50200 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DCA214EBF64300F50200 /* TaskController.m */; };
 		2C987CC414F0F14400BEB6A2 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C987CC314F0F14400BEB6A2 /* home.png */; };
 		2C987CC914F0F1A800BEB6A2 /* collaborators_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C987CC514F0F1A800BEB6A2 /* collaborators_gray.png */; };
 		2C987CCA14F0F1A800BEB6A2 /* search_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C987CC614F0F1A800BEB6A2 /* search_gray.png */; };
@@ -33,13 +32,7 @@
 		2C9BB3EF14F0E90A00290A3C /* search_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E514F0E90A00290A3C /* search_big.png */; };
 		2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E614F0E90A00290A3C /* workspace_big.png */; };
 		2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E714F0E90A00290A3C /* user_default.png */; };
-		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
-		2CDAE8EE14E265030092DD10 /* mytask.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8ED14E265030092DD10 /* mytask.plist */; };
-		2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */; };
-		2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C014E4C3E30007B2E1 /* HttpRequest.m */; };
 		2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C214E4C41B0007B2E1 /* DataManager.m */; };
-		F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32EED5114DBC8F800BCCBD6 /* TaskController.xib */; };
-		F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */; };
 		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
 		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
@@ -71,7 +64,6 @@
 		2C61DC9214EBD15300F50200 /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
 		2C61DC9814EBF63800F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SearchController.xib; sourceTree = "<group>"; };
 		2C61DC9B14EBF63F00F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/SearchController.m; sourceTree = "<group>"; };
-		2C61DCA114EBF64300F50200 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/TaskController.m; sourceTree = "<group>"; };
 		2C987CC314F0F14400BEB6A2 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		2C987CC514F0F1A800BEB6A2 /* collaborators_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collaborators_gray.png; sourceTree = "<group>"; };
 		2C987CC614F0F1A800BEB6A2 /* search_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_gray.png; sourceTree = "<group>"; };
@@ -91,17 +83,8 @@
 		2C9BB3E614F0E90A00290A3C /* workspace_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workspace_big.png; sourceTree = "<group>"; };
 		2C9BB3E714F0E90A00290A3C /* user_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_default.png; sourceTree = "<group>"; };
 		2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		2CDAE8ED14E265030092DD10 /* mytask.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mytask.plist; sourceTree = "<group>"; };
-		2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableViewCell.h; sourceTree = "<group>"; };
-		2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableViewCell.m; sourceTree = "<group>"; };
-		2CE462BF14E4C3E30007B2E1 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
-		2CE462C014E4C3E30007B2E1 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
 		2CE462C214E4C41B0007B2E1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		F32EED4F14DBC8F800BCCBD6 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
-		F32EED5114DBC8F800BCCBD6 /* TaskController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskController.xib; sourceTree = "<group>"; };
-		F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
 		F380C00414DD2B4800880B96 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		F380C00714DE4FB700880B96 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,15 +162,6 @@
 			name = colleague;
 			sourceTree = "<group>";
 		};
-		2CE7AC5E14E109A30080B9B7 /* http */ = {
-			isa = PBXGroup;
-			children = (
-				2CE462BF14E4C3E30007B2E1 /* HttpRequest.h */,
-				2CE462C014E4C3E30007B2E1 /* HttpRequest.m */,
-			);
-			name = http;
-			sourceTree = "<group>";
-		};
 		2CF0E87714F0E76600A78435 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,26 +179,11 @@
 			name = home;
 			sourceTree = "<group>";
 		};
-		F32EED4314DBC6C400BCCBD6 /* task */ = {
-			isa = PBXGroup;
-			children = (
-				F32EED4F14DBC8F800BCCBD6 /* TaskController.h */,
-				2C61DCA214EBF64300F50200 /* TaskController.m */,
-				F32EED5114DBC8F800BCCBD6 /* TaskController.xib */,
-				2CE462A314E4B8430007B2E1 /* TaskDetailTableViewCell.h */,
-				2CE462A414E4B8430007B2E1 /* TaskDetailTableViewCell.m */,
-				F380C00214DD053500880B96 /* TaskDetailTableViewCell.xib */,
-			);
-			name = task;
-			sourceTree = "<group>";
-		};
 		F380C00614DE46AE00880B96 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				2CB81B5714E23B4900BA77C0 /* mytask.sqlite */,
 				F380C00714DE4FB700880B96 /* DataManager.h */,
 				2CE462C214E4C41B0007B2E1 /* DataManager.m */,
-				2CDAE8ED14E265030092DD10 /* mytask.plist */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -267,9 +226,7 @@
 				2C61DC9114EBD13500F50200 /* search */,
 				2C61DC8B14EBCA0F00F50200 /* favorites */,
 				2CE4629A14E4064E0007B2E1 /* colleague */,
-				2CE7AC5E14E109A30080B9B7 /* http */,
 				F380C00614DE46AE00880B96 /* data */,
-				F32EED4314DBC6C400BCCBD6 /* task */,
 				F3FBE9BD14DADB8900CF86BA /* activity */,
 				F3FBE97414DA829400CF86BA /* main */,
 				F3FBE95114D7D45000CF86BA /* auth */,
@@ -396,11 +353,7 @@
 				F3FBE94814D79C4500CF86BA /* Default@2x.png in Resources */,
 				F3FBE94D14D7D3D200CF86BA /* AuthenticationController.xib in Resources */,
 				F3FBE95314D7DA3D00CF86BA /* logo.png in Resources */,
-				F32EED5314DBC8F800BCCBD6 /* TaskController.xib in Resources */,
-				F380C00314DD053500880B96 /* TaskDetailTableViewCell.xib in Resources */,
 				F380C00514DD2B4800880B96 /* sullivan.png in Resources */,
-				2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */,
-				2CDAE8EE14E265030092DD10 /* mytask.plist in Resources */,
 				2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */,
 				2C61DC8A14EBB3D900F50200 /* SettingViewController.xib in Resources */,
 				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
@@ -433,9 +386,6 @@
 				F3FBE93414D79B2800CF86BA /* main.m in Sources */,
 				F3FBE93814D79B2800CF86BA /* AppDelegate.m in Sources */,
 				F3FBE94C14D7D3D200CF86BA /* AuthenticationController.m in Sources */,
-				2C61DCA014EBF64300F50200 /* TaskController.m in Sources */,
-				2CE462A514E4B8430007B2E1 /* TaskDetailTableViewCell.m in Sources */,
-				2CE462C114E4C3E30007B2E1 /* HttpRequest.m in Sources */,
 				2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */,
 				2C61DC8314EBAE8E00F50200 /* ColleagueController.m in Sources */,
 				2C61DC8914EBB3D900F50200 /* SettingViewController.m in Sources */,
@@ -463,14 +413,6 @@
 				2C61DC9B14EBF63F00F50200 /* en */,
 			);
 			name = SearchController.m;
-			sourceTree = "<group>";
-		};
-		2C61DCA214EBF64300F50200 /* TaskController.m */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C61DCA114EBF64300F50200 /* en */,
-			);
-			name = TaskController.m;
 			sourceTree = "<group>";
 		};
 		F3FBE93014D79B2800CF86BA /* InfoPlist.strings */ = {
