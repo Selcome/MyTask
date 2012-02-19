@@ -34,8 +34,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
      [userNameField becomeFirstResponder];
-//    userNameField.text=@"Sullivan";
-//    passWordField.text=@"password";
+    userNameField.text=@"Sullivan";
+    passWordField.text=@"password";
 }
 
 - (void)viewDidUnload
