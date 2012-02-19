@@ -11,8 +11,7 @@
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onClickAddButton:)];
-        self.navigationItem.rightBarButtonItem=anotherButton;
+        self.navigationItem.title=@"收藏";
     }
     return self;
 }
@@ -28,7 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"收藏";
     // Do any additional setup after loading the view from its nib.
     
 }

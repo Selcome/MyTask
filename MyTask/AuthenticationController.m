@@ -7,7 +7,7 @@
 //
 
 #import "AuthenticationController.h"
-
+#import "DataManager.h"
 @implementation AuthenticationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil 
@@ -33,6 +33,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+     [userNameField becomeFirstResponder];
+//    userNameField.text=@"Sullivan";
+//    passWordField.text=@"password";
 }
 
 - (void)viewDidUnload
@@ -52,10 +55,40 @@
     [userNameField resignFirstResponder];
     [passWordField resignFirstResponder];
     if (userNameField.text.length&&passWordField.text.length) {
-          NSLog(@"点击进入系统");
+        if ([[DataManager shareInstance] checkName:userNameField.text password:passWordField.text]) {
+             self.view.window.rootViewController=tabBarController;
+        }else{
+            UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"警告" message:@"用户名或密码不正确！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alertView show];
+        }
     }else{
-        UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"警告" message:@"用户名或密码不能为空！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alertView show];
+        UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                      initWithTitle:@"用户名或密码不正确!"
+                                      delegate:nil
+                                      cancelButtonTitle:@"确认"
+                                      destructiveButtonTitle:nil
+                                      otherButtonTitles:nil];
+        [actionSheet showInView:self.view];
     }
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    userNameField.text=@"";
+    passWordField.text=@"";
+    [userNameField becomeFirstResponder];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    switch (textField.tag) {
+        case 0:
+            [passWordField becomeFirstResponder];
+            break;
+        case 1:
+            [self login:nil];
+            break;
+        default:
+            break;
+    }
+    return YES;
 }
 @end

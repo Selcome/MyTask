@@ -7,7 +7,6 @@
 //
 
 #import "HomeController.h"
-#import "TaskController.h"
 #import "SettingViewController.h"
 @interface HomeController()
 -(void)setUserImage;
@@ -16,7 +15,6 @@
 @implementation HomeController
 
 -(void)setUserImage{
-    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);
     NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory
                                                        , NSUserDomainMask 
                                                        , YES); 
@@ -25,15 +23,8 @@
     
     NSString *imagePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"sullivan.png"];
     
-    NSLog(@"set user image: %@",[NSURL fileURLWithPath:imagePath]);
-    
-    
     [[NSFileManager defaultManager] copyItemAtURL:[NSURL fileURLWithPath:imagePath] toURL:[NSURL fileURLWithPath:newImagePath] error:nil];
-    
-    //userImage.image=[UIImage imageNamed:@"sullivan.png"];
     userImage.image=[UIImage imageWithContentsOfFile:newImagePath];
-//    
-//    NSLog(@"set user image: %@",imagePath);
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -101,9 +92,7 @@
             break;
         case 4:
         {
-//            ActivityController *activityController=[[ActivityController alloc] initWithNibName:@"ActivityController" bundle:nil];
-//            [self.navigationController pushViewController:activityController animated:YES];
-//            activityController.navigationItem.title=@"我的任务";
+            NSLog(@"我的任务");
             break;
         }
         case 5:
