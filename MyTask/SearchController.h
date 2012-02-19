@@ -8,8 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchController : UIViewController<UISearchBarDelegate>
-{
-   __weak IBOutlet UISearchDisplayController *searchDisplayController;  
-}
+@interface SearchController : UIViewController
 @end

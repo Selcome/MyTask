@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ColleagueController : UIViewController<UITableViewDelegate,UITableViewDataSource>
-{
-    __weak IBOutlet UITableView *rootTableView;
-    NSArray *colleagueArray;
-}
+@interface ColleagueController : UIViewController
+
 @end
