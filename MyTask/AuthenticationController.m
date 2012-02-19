@@ -34,8 +34,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
      [userNameField becomeFirstResponder];
-    userNameField.text=@"Sullivan";
-    passWordField.text=@"password";
+//    userNameField.text=@"Sullivan";
+//    passWordField.text=@"password";
 }
 
 - (void)viewDidUnload
@@ -62,8 +62,13 @@
             [alertView show];
         }
     }else{
-        UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"警告" message:@"用户名或密码不能为空！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alertView show];
+        UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                      initWithTitle:@"用户名或密码不正确!"
+                                      delegate:nil
+                                      cancelButtonTitle:@"确认"
+                                      destructiveButtonTitle:nil
+                                      otherButtonTitles:nil];
+        [actionSheet showInView:self.view];
     }
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
