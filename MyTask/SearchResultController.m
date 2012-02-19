@@ -1,25 +1,29 @@
 //
-//  FavoritesController.m
+//  SearchResultController.m
 //  MyTask
 //
-//  Created by marcus wang on 12-2-15.
+//  Created by marcus wang on 12-2-16.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "FavoritesController.h"
-@implementation FavoritesController
-- (id)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
+#import "SearchResultController.h"
+
+@implementation SearchResultController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onClickAddButton:)];
-        self.navigationItem.rightBarButtonItem=anotherButton;
+        // Custom initialization
     }
     return self;
 }
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
+    
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -28,14 +32,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"收藏";
     // Do any additional setup after loading the view from its nib.
-    
 }
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
