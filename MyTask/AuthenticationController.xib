@@ -204,7 +204,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-				</object>
+</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
 					<object class="IBUINavigationController" id="145554480">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="806737906">

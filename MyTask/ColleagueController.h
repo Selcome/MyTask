@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+<<<<<<< HEAD
 @interface ColleagueController : UIViewController
 
+=======
+@interface ColleagueController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    __weak IBOutlet UITableView *rootTableView;
+    NSArray *colleagueArray;
+}
+>>>>>>> wangjun_MyTask
 @end

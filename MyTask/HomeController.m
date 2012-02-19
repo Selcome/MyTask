@@ -7,7 +7,9 @@
 //
 
 #import "HomeController.h"
+#import "TaskController.h"
 #import "SettingViewController.h"
+#import "ActivityController.h"
 @interface HomeController()
 -(void)setUserImage;
 @end
