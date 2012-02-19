@@ -7,7 +7,6 @@
 //
 
 #import "AuthenticationController.h"
-#import "HomeController.h"
 
 @implementation AuthenticationController
 
@@ -38,8 +37,6 @@
 
 - (void)viewDidUnload
 {
-    tabBarController = nil;
-    tabBarController = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -52,7 +49,13 @@
 }
 
 - (IBAction)login:(id)sender {
-    self.view.window.rootViewController=tabBarController;
-    self.view.window.rootViewController.view=tabBarController.view;
+    [userNameField resignFirstResponder];
+    [passWordField resignFirstResponder];
+    if (userNameField.text.length&&passWordField.text.length) {
+          NSLog(@"点击进入系统");
+    }else{
+        UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"警告" message:@"用户名或密码不能为空！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alertView show];
+    }
 }
 @end
