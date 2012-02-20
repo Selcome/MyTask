@@ -8,13 +8,14 @@
 
 #import "AppDelegate.h"
 #import "AuthenticationController.h"
-
+#import "OperationalDatabase.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[OperationalDatabase defaultManager] openDatabase];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addLoginViewController:) name:@"change.login.viewcontroller" object:nil];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

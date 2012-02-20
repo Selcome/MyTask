@@ -12,6 +12,7 @@
 {
     __weak IBOutlet UILabel *nameLable;
     __weak IBOutlet UILabel *timeLable;
+    __weak IBOutlet UIImageView *iconImageView;
 }
 -(void)onShowCell:(NSDictionary *)dir;
 @end

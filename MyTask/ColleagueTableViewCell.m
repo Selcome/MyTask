@@ -29,5 +29,9 @@
 {
     [nameLable setText:[dir objectForKey:@"name"]];
     [timeLable setText:[dir objectForKey:@"phone"]];
+    
+    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:[dir objectForKey:@"image"]]];
+    UIImage *img=[UIImage imageWithData:data];
+    [iconImageView setImage:img];
 }
 @end
