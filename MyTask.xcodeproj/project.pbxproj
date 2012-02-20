@@ -256,8 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				2C56054F14F143F000F6FDFC /* colleague.plist */,
-				2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */,
 				2C61DC7E14EBAE8E00F50200 /* ColleagueController.h */,
+				2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */,
 				2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */,
 				2C5604CC14F13BE100F6FDFC /* ColleagueTableViewCell.h */,
 				2C5604CD14F13BE100F6FDFC /* ColleagueTableViewCell.m */,

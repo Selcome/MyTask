@@ -89,7 +89,7 @@
 							<object class="IBUILabel" id="345873101">
 								<reference key="NSNextResponder" ref="524196611"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{230, 47}, {99, 21}}</string>
+								<string key="NSFrame">{{152, 47}, {168, 21}}</string>
 								<reference key="NSSuperview" ref="524196611"/>
 								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
@@ -120,7 +120,6 @@
 						<string key="NSFrameSize">{320, 70}</string>
 						<reference key="NSSuperview" ref="46627814"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:395</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>

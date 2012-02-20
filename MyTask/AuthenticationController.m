@@ -33,9 +33,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+//    userNameField.text=@"Sullivan";
+//    passWordField.text=@"password";
+    NSDictionary *userInfo=[[DataManager shareInstance] getUserInfo];
+    if (userInfo) {
+        userNameField.text=[userInfo objectForKey:@"userName"];
+        passWordField.text=[userInfo objectForKey:@"password"];
+    }else{
      [userNameField becomeFirstResponder];
-    userNameField.text=@"Sullivan";
-    passWordField.text=@"password";
+    }
 }
 
 - (void)viewDidUnload

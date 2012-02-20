@@ -28,6 +28,6 @@
 -(void)onShowCell:(NSDictionary *)dir
 {
     [nameLable setText:[dir objectForKey:@"name"]];
-    [timeLable setText:[dir objectForKey:@"time"]];
+    [timeLable setText:[dir objectForKey:@"phone"]];
 }
 @end

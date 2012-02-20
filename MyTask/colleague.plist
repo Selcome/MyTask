@@ -5,14 +5,14 @@
 	<key>colleague</key>
 	<array>
 		<dict>
-			<key>time</key>
-			<string>2012-2-2</string>
+			<key>phone</key>
+			<string>15210133333</string>
 			<key>name</key>
 			<string>Marshal</string>
 		</dict>
 		<dict>
-			<key>time</key>
-			<string>2012-2-10</string>
+			<key>phone</key>
+			<string>15210133333</string>
 			<key>name</key>
 			<string>wangjun</string>
 		</dict>

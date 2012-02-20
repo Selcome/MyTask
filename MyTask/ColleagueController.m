@@ -14,9 +14,9 @@
     self = [super initWithCoder:coder];
     if (self) {
 //        //使用plist 
-//        NSString *filename= [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"colleague.plist"]; 
+        NSString *filename= [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"colleague.plist"]; 
 //        //读文件
-//        colleagueArray= [[NSDictionary dictionaryWithContentsOfFile:filename] objectForKey:@"colleague"];
+        colleagueArray= [[NSDictionary dictionaryWithContentsOfFile:filename] objectForKey:@"colleague"];
     }
     return self;
 }
