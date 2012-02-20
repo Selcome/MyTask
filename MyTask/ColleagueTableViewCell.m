@@ -30,6 +30,8 @@
     currentDic=dir;
     [nameLable setText:[dir objectForKey:@"name"]];
     [timeLable setText:[dir objectForKey:@"phone"]];
+    UIImage *image=[UIImage imageNamed:@"user_default.png"];
+    [iconImageView setImage:image];
     [NSThread detachNewThreadSelector:@selector(loadimage:) toTarget:self withObject:dir];
 }
 -(void)loadimage:(NSDictionary *)dic
