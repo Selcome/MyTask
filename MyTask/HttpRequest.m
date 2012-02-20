@@ -7,7 +7,6 @@
 //
 
 #import "HttpRequest.h"
-
 @interface HttpRequest()
 
 -(void)startGetHttpData:(NSString *)url;
