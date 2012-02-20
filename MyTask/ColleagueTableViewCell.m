@@ -27,11 +27,24 @@
 }
 -(void)onShowCell:(NSDictionary *)dir
 {
+    currectDic=dir;
     [nameLable setText:[dir objectForKey:@"name"]];
     [timeLable setText:[dir objectForKey:@"phone"]];
     
-    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:[dir objectForKey:@"image"]]];
-    UIImage *img=[UIImage imageWithData:data];
-    [iconImageView setImage:img];
+    AsyncImageView *asyncImageView=[[AsyncImageView alloc] init];
+    asyncImageView.tag=[[dir objectForKey:@"id"] intValue];
+    asyncImageView.delegate=self;
+    [asyncImageView loadImageFromURL:[NSURL URLWithString:[dir objectForKey:@"image"]]];
+}
+
+-(void)getImageSuccess:(UIImage *)image tag:(NSNumber *)tag
+{
+    if ([tag intValue]==[[currectDic objectForKey:@"id"] intValue]) {
+       [iconImageView setImage:image]; 
+    }
+}
+-(void)getImageFail:(UIImage *)image tag:(NSNumber *)tag
+{
+
 }
 @end

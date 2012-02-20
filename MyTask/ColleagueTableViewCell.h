@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ColleagueTableViewCell : UITableViewCell
+#import "AsyncImageView.h"
+@interface ColleagueTableViewCell : UITableViewCell<AsyncImageDelegate>
 {
     __weak IBOutlet UILabel *nameLable;
     __weak IBOutlet UILabel *timeLable;
     __weak IBOutlet UIImageView *iconImageView;
+    
+    NSDictionary *currectDic;
 }
 -(void)onShowCell:(NSDictionary *)dir;
 @end

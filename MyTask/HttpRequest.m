@@ -53,6 +53,7 @@
 // 网络错误时触发
 - (void)connection:(NSURLConnection *)aConn didFailWithError:(NSError *)error
 {
+    requestData=nil;
     [self performSelectorOnMainThread:@selector(setEnd) withObject:nil waitUntilDone:NO];
 }
 // 全部数据接收完毕时触发
