@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C02950214F23F7900978AD9 /* colleague.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2C02950114F23F7900978AD9 /* colleague.sqlite */; };
 		2C34F24514F20CED0089B39E /* calendar.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C34F24414F20CED0089B39E /* calendar.html */; };
 		2C34F24B14F210F60089B39E /* CalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34F24914F210F60089B39E /* CalendarController.m */; };
 		2C34F24C14F210F60089B39E /* CalendarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C34F24A14F210F60089B39E /* CalendarController.xib */; };
@@ -51,7 +52,6 @@
 		2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */; };
 		2CDAE8E514E253460092DD10 /* posted_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E414E253460092DD10 /* posted_small.png */; };
 		2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E614E2535C0092DD10 /* task_small.png */; };
-		2CDB713F14F2287500C50625 /* colleague.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB713E14F2287500C50625 /* colleague.sqlite */; };
 		2CDB714714F228CF00C50625 /* OperationalDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB714614F228CE00C50625 /* OperationalDatabase.m */; };
 		2CDB715114F2353900C50625 /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB715014F2353900C50625 /* user_default.png */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
@@ -73,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C02950114F23F7900978AD9 /* colleague.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = colleague.sqlite; sourceTree = "<group>"; };
 		2C34F24414F20CED0089B39E /* calendar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = calendar.html; sourceTree = "<group>"; };
 		2C34F24814F210F60089B39E /* CalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarController.h; sourceTree = "<group>"; };
 		2C34F24914F210F60089B39E /* CalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarController.m; sourceTree = "<group>"; };
@@ -136,7 +137,6 @@
 		2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 		2CDAE8E414E253460092DD10 /* posted_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = posted_small.png; sourceTree = "<group>"; };
 		2CDAE8E614E2535C0092DD10 /* task_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task_small.png; sourceTree = "<group>"; };
-		2CDB713E14F2287500C50625 /* colleague.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = colleague.sqlite; sourceTree = "<group>"; };
 		2CDB714414F228CE00C50625 /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
 		2CDB714514F228CE00C50625 /* OperationalDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationalDatabase.h; sourceTree = "<group>"; };
 		2CDB714614F228CE00C50625 /* OperationalDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationalDatabase.m; sourceTree = "<group>"; };
@@ -263,11 +263,11 @@
 		2CE4629A14E4064E0007B2E1 /* colleague */ = {
 			isa = PBXGroup;
 			children = (
+				2C02950114F23F7900978AD9 /* colleague.sqlite */,
 				2CDB715014F2353900C50625 /* user_default.png */,
 				2CDB714414F228CE00C50625 /* SQL.h */,
 				2CDB714514F228CE00C50625 /* OperationalDatabase.h */,
 				2CDB714614F228CE00C50625 /* OperationalDatabase.m */,
-				2CDB713E14F2287500C50625 /* colleague.sqlite */,
 				2C56054F14F143F000F6FDFC /* colleague.plist */,
 				2C61DC7E14EBAE8E00F50200 /* ColleagueController.h */,
 				2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */,
@@ -495,8 +495,8 @@
 				2C5605A214F1ECC800F6FDFC /* AboutController.xib in Resources */,
 				2C34F24514F20CED0089B39E /* calendar.html in Resources */,
 				2C34F24C14F210F60089B39E /* CalendarController.xib in Resources */,
-				2CDB713F14F2287500C50625 /* colleague.sqlite in Resources */,
 				2CDB715114F2353900C50625 /* user_default.png in Resources */,
+				2C02950214F23F7900978AD9 /* colleague.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
