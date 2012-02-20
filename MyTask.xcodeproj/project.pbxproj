@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C15EFDB14F0EB330061D9B7 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C15EFDA14F0EB330061D9B7 /* sullivan.png */; };
 		2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */; };
 		2C61DC8314EBAE8E00F50200 /* ColleagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */; };
 		2C61DC8914EBB3D900F50200 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC8714EBB3D900F50200 /* SettingViewController.m */; };
@@ -32,8 +31,8 @@
 		2C9BB3EF14F0E90A00290A3C /* search_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E514F0E90A00290A3C /* search_big.png */; };
 		2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E614F0E90A00290A3C /* workspace_big.png */; };
 		2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3E714F0E90A00290A3C /* user_default.png */; };
+		2CDDCF1014F25E7500FDDF92 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCF0F14F25E7500FDDF92 /* sullivan.png */; };
 		2CE462C314E4C41B0007B2E1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE462C214E4C41B0007B2E1 /* DataManager.m */; };
-		F380C00514DD2B4800880B96 /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = F380C00414DD2B4800880B96 /* sullivan.png */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
 		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
 		F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */; };
@@ -51,7 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C15EFDA14F0EB330061D9B7 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueController.xib; sourceTree = "<group>"; };
 		2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueController.m; sourceTree = "<group>"; };
 		2C61DC7E14EBAE8E00F50200 /* ColleagueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColleagueController.h; sourceTree = "<group>"; };
@@ -84,8 +82,8 @@
 		2C9BB3E714F0E90A00290A3C /* user_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_default.png; sourceTree = "<group>"; };
 		2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		2CDDCF0F14F25E7500FDDF92 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		2CE462C214E4C41B0007B2E1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		F380C00414DD2B4800880B96 /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		F380C00714DE4FB700880B96 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBE92714D79B2800CF86BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -250,8 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				F3FBE93F14D79C4500CF86BA /* icon-72.png */,
-				2C15EFDA14F0EB330061D9B7 /* sullivan.png */,
 				F3FBE94014D79C4500CF86BA /* icon.png */,
+				2CDDCF0F14F25E7500FDDF92 /* sullivan.png */,
 				F3FBE94114D79C4500CF86BA /* icon@2x.png */,
 				F3FBE94214D79C4500CF86BA /* Default.png */,
 				F3FBE94314D79C4500CF86BA /* Default@2x.png */,
@@ -353,7 +351,6 @@
 				F3FBE94814D79C4500CF86BA /* Default@2x.png in Resources */,
 				F3FBE94D14D7D3D200CF86BA /* AuthenticationController.xib in Resources */,
 				F3FBE95314D7DA3D00CF86BA /* logo.png in Resources */,
-				F380C00514DD2B4800880B96 /* sullivan.png in Resources */,
 				2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */,
 				2C61DC8A14EBB3D900F50200 /* SettingViewController.xib in Resources */,
 				2C61DC9014EBCA3200F50200 /* FavoritesController.xib in Resources */,
@@ -366,13 +363,13 @@
 				2C9BB3EF14F0E90A00290A3C /* search_big.png in Resources */,
 				2C9BB3F014F0E90A00290A3C /* workspace_big.png in Resources */,
 				2C9BB3F114F0E90A00290A3C /* user_default.png in Resources */,
-				2C15EFDB14F0EB330061D9B7 /* sullivan.png in Resources */,
 				2C987CC414F0F14400BEB6A2 /* home.png in Resources */,
 				2C987CC914F0F1A800BEB6A2 /* collaborators_gray.png in Resources */,
 				2C987CCA14F0F1A800BEB6A2 /* search_gray.png in Resources */,
 				2C987CCB14F0F1A800BEB6A2 /* activity_gray.png in Resources */,
 				2C987CCC14F0F1A800BEB6A2 /* favorites_gray.png in Resources */,
 				2C987CD114F0F2AC00BEB6A2 /* ActivityController.xib in Resources */,
+				2CDDCF1014F25E7500FDDF92 /* sullivan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
