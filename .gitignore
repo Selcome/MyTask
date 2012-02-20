@@ -1,2 +1,16 @@
-MyTask.xcodeproj/project.xcworkspace/xcuserdata/marshal.xcuserdatad/UserInterfaceState.xcuserstate
-MyTask.xcodeproj/project.xcworkspace/xcuserdata/marcus.xcuserdatad/UserInterfaceState.xcuserstate
+# Xcode
+############
+
+*.mode1
+*.mode1v3
+*.mode2
+*.mode2v3
+*.mode1v3
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.pyc
+*~.nib/
+build/*
+*.xcworkspace*
+*.xcuserdata*
