@@ -1,21 +1,21 @@
 //
-//  AboutController.m
+//  CalendarController.m
 //  MyTask
 //
 //  Created by marcus wang on 12-2-20.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "AboutController.h"
+#import "CalendarController.h"
 
-@implementation AboutController
+@implementation CalendarController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.navigationItem.title=@"关于";
+        self.navigationItem.title=@"日历";
     }
     return self;
 }
@@ -34,7 +34,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    textView.text=@"  怪物公司  \n  怪物公司创建于...";
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"calendar" ofType:@"html"]; 
+     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath: path]]]; 
 }
 
 - (void)viewDidUnload

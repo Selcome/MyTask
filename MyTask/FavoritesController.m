@@ -14,6 +14,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         self.navigationItem.title=@"收藏";
+        favoritesData=[[FavoritesData alloc] init];
         UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onClickAddButton:)];
         self.navigationItem.rightBarButtonItem=anotherButton;
     }

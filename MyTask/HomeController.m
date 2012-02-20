@@ -10,6 +10,7 @@
 #import "TaskController.h"
 #import "SettingViewController.h"
 #import "ActivityController.h"
+#import "CalendarController.h"
 @interface HomeController()
 -(void)setUserImage;
 @end
@@ -90,7 +91,11 @@
             self.tabBarController.selectedIndex=3;
             break;
         case 3:
+        {
             NSLog(@"日历");
+            CalendarController *calendarController=[[CalendarController alloc] initWithNibName:@"CalendarController" bundle:nil];
+            [self.navigationController pushViewController:calendarController animated:YES];
+        }
             break;
         case 4:
         {

@@ -1,5 +1,5 @@
 //
-//  AboutController.h
+//  CalendarController.h
 //  MyTask
 //
 //  Created by marcus wang on 12-2-20.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutController : UIViewController
+@interface CalendarController : UIViewController
 {
-    __weak IBOutlet UITextView *textView;
+    __weak IBOutlet UIWebView *webView;
 }
+
 @end

@@ -27,15 +27,15 @@
 -(void)createEnvironment
 {
     favoritesArray=[NSMutableArray array];
-    favoritesArray = [NSKeyedUnarchiver unarchiveObjectWithFile: [self getFilePath]]; 
-    if (!favoritesArray) {
+//    favoritesArray = [NSKeyedUnarchiver unarchiveObjectWithFile: [self getFilePath]]; 
+//    if (!favoritesArray) {
         NSMutableArray *arrayDir=[NSMutableArray array];
         [arrayDir addObject:[NSDictionary dictionaryWithObjectsAndKeys:@"苏利文",@"name",@"s",@"firstName",@"男",@"sex",nil]];
         [arrayDir addObject:[NSDictionary dictionaryWithObjectsAndKeys:@"苏利文1",@"name",@"s",@"firstName",@"男",@"sex",nil]];
         [arrayDir addObject:[NSDictionary dictionaryWithObjectsAndKeys:@"大眼怪迈克",@"name",@"d",@"firstName",@"男",@"sex",nil]];
-        [NSKeyedArchiver archiveRootObject:arrayDir toFile:[self getFilePath]];
+//        [NSKeyedArchiver archiveRootObject:arrayDir toFile:[self getFilePath]];
         favoritesArray=arrayDir;
-    }
+//    }
 }
 -(NSString *)getFilePath
 {
