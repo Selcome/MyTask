@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C34F24514F20CED0089B39E /* calendar.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C34F24414F20CED0089B39E /* calendar.html */; };
+		2C34F24B14F210F60089B39E /* CalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34F24914F210F60089B39E /* CalendarController.m */; };
+		2C34F24C14F210F60089B39E /* CalendarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C34F24A14F210F60089B39E /* CalendarController.xib */; };
 		2C56045914F103F700F6FDFC /* TaskDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56045714F103F700F6FDFC /* TaskDetailTableViewCell.m */; };
 		2C56045A14F103F700F6FDFC /* TaskDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C56045814F103F700F6FDFC /* TaskDetailTableViewCell.xib */; };
 		2C56046A14F1055100F6FDFC /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56046814F1055100F6FDFC /* TaskController.m */; };
@@ -67,6 +70,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C34F24414F20CED0089B39E /* calendar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = calendar.html; sourceTree = "<group>"; };
+		2C34F24814F210F60089B39E /* CalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarController.h; sourceTree = "<group>"; };
+		2C34F24914F210F60089B39E /* CalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarController.m; sourceTree = "<group>"; };
+		2C34F24A14F210F60089B39E /* CalendarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarController.xib; sourceTree = "<group>"; };
 		2C56045614F103F700F6FDFC /* TaskDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailTableViewCell.h; sourceTree = "<group>"; };
 		2C56045714F103F700F6FDFC /* TaskDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailTableViewCell.m; sourceTree = "<group>"; };
 		2C56045814F103F700F6FDFC /* TaskDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -166,6 +173,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C34F24714F210E30089B39E /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				2C34F24414F20CED0089B39E /* calendar.html */,
+				2C34F24814F210F60089B39E /* CalendarController.h */,
+				2C34F24914F210F60089B39E /* CalendarController.m */,
+				2C34F24A14F210F60089B39E /* CalendarController.xib */,
+			);
+			name = calendar;
+			sourceTree = "<group>";
+		};
 		2C56045514F103E500F6FDFC /* task */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +323,7 @@
 		F3FBE92D14D79B2800CF86BA /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
+				2C34F24714F210E30089B39E /* calendar */,
 				2C56047C14F1064E00F6FDFC /* http */,
 				2C56045514F103E500F6FDFC /* task */,
 				2CF0E87714F0E76600A78435 /* home */,
@@ -461,6 +480,8 @@
 				2C56055014F143F000F6FDFC /* colleague.plist in Resources */,
 				2C56055E14F1454300F6FDFC /* HomeController.xib in Resources */,
 				2C5605A214F1ECC800F6FDFC /* AboutController.xib in Resources */,
+				2C34F24514F20CED0089B39E /* calendar.html in Resources */,
+				2C34F24C14F210F60089B39E /* CalendarController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +513,7 @@
 				2C56051814F140F800F6FDFC /* pinyin.c in Sources */,
 				2C56055D14F1454300F6FDFC /* HomeController.m in Sources */,
 				2C5605A114F1ECC800F6FDFC /* AboutController.m in Sources */,
+				2C34F24B14F210F60089B39E /* CalendarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
