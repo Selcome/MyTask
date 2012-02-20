@@ -53,6 +53,13 @@
 		2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E614E2535C0092DD10 /* task_small.png */; };
 		2CDB713F14F2287500C50625 /* colleague.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB713E14F2287500C50625 /* colleague.sqlite */; };
 		2CDB714714F228CF00C50625 /* OperationalDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB714614F228CE00C50625 /* OperationalDatabase.m */; };
+		2CDDCEC614F248CF00FDDF92 /* account_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCEC414F248CF00FDDF92 /* account_big.png */; };
+		2CDDCEC714F248CF00FDDF92 /* activity_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCEC514F248CF00FDDF92 /* activity_big.png */; };
+		2CDDCEC914F248D800FDDF92 /* calendar_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCEC814F248D800FDDF92 /* calendar_big.png */; };
+		2CDDCECB14F248EA00FDDF92 /* search_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCECA14F248EA00FDDF92 /* search_big.png */; };
+		2CDDCECD14F248F400FDDF92 /* tasks_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCECC14F248F400FDDF92 /* tasks_big.png */; };
+		2CDDCECF14F248FA00FDDF92 /* workspace_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCECE14F248FA00FDDF92 /* workspace_big.png */; };
+		2CDDCED114F2492600FDDF92 /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDDCED014F2492600FDDF92 /* user_default.png */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
 		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
 		F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */; };
@@ -139,6 +146,13 @@
 		2CDB714414F228CE00C50625 /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
 		2CDB714514F228CE00C50625 /* OperationalDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationalDatabase.h; sourceTree = "<group>"; };
 		2CDB714614F228CE00C50625 /* OperationalDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationalDatabase.m; sourceTree = "<group>"; };
+		2CDDCEC414F248CF00FDDF92 /* account_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = account_big.png; sourceTree = "<group>"; };
+		2CDDCEC514F248CF00FDDF92 /* activity_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_big.png; sourceTree = "<group>"; };
+		2CDDCEC814F248D800FDDF92 /* calendar_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_big.png; sourceTree = "<group>"; };
+		2CDDCECA14F248EA00FDDF92 /* search_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_big.png; sourceTree = "<group>"; };
+		2CDDCECC14F248F400FDDF92 /* tasks_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tasks_big.png; sourceTree = "<group>"; };
+		2CDDCECE14F248FA00FDDF92 /* workspace_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workspace_big.png; sourceTree = "<group>"; };
+		2CDDCED014F2492600FDDF92 /* user_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_default.png; sourceTree = "<group>"; };
 		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBE92714D79B2800CF86BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3FBE92914D79B2800CF86BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -261,6 +275,7 @@
 		2CE4629A14E4064E0007B2E1 /* colleague */ = {
 			isa = PBXGroup;
 			children = (
+				2CDDCED014F2492600FDDF92 /* user_default.png */,
 				2CDB714414F228CE00C50625 /* SQL.h */,
 				2CDB714514F228CE00C50625 /* OperationalDatabase.h */,
 				2CDB714614F228CE00C50625 /* OperationalDatabase.m */,
@@ -279,6 +294,12 @@
 		2CF0E87714F0E76600A78435 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				2CDDCECE14F248FA00FDDF92 /* workspace_big.png */,
+				2CDDCECA14F248EA00FDDF92 /* search_big.png */,
+				2CDDCECC14F248F400FDDF92 /* tasks_big.png */,
+				2CDDCEC814F248D800FDDF92 /* calendar_big.png */,
+				2CDDCEC414F248CF00FDDF92 /* account_big.png */,
+				2CDDCEC514F248CF00FDDF92 /* activity_big.png */,
 				2C56053714F142D800F6FDFC /* search_gray.png */,
 				2C56052F14F1426D00F6FDFC /* favorites_gray.png */,
 				2C56052A14F1425600F6FDFC /* activity_gray.png */,
@@ -493,6 +514,13 @@
 				2C34F24514F20CED0089B39E /* calendar.html in Resources */,
 				2C34F24C14F210F60089B39E /* CalendarController.xib in Resources */,
 				2CDB713F14F2287500C50625 /* colleague.sqlite in Resources */,
+				2CDDCEC614F248CF00FDDF92 /* account_big.png in Resources */,
+				2CDDCEC714F248CF00FDDF92 /* activity_big.png in Resources */,
+				2CDDCEC914F248D800FDDF92 /* calendar_big.png in Resources */,
+				2CDDCECB14F248EA00FDDF92 /* search_big.png in Resources */,
+				2CDDCECD14F248F400FDDF92 /* tasks_big.png in Resources */,
+				2CDDCECF14F248FA00FDDF92 /* workspace_big.png in Resources */,
+				2CDDCED114F2492600FDDF92 /* user_default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
