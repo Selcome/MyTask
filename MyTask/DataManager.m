@@ -7,8 +7,8 @@
 //
 
 #import "DataManager.h"
-#import "/usr/include/sqlite3.h"
 #import "HttpRequest.h"
+#define jsonUrl @"http://marcuswang.github.com/MyTaskServer/activity.json"
 @implementation DataManager{
     NSMutableArray *activities;
 }
@@ -23,11 +23,9 @@
     self = [super init];
     if (self) {
         activities=[NSMutableArray array];
-         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"吓唬小孩尖叫发电",@"title",@"吓唬小孩尖叫发电",@"content",@"1",@"id",@"task",@"type",@"苏利文",@"author",@"2012-2-5",@"createTime",@"未完成",@"status",@"王军",@"cc",@"",@"tags",@"Marshal",@"addUser",nil]];
-         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"演示如何吓小孩尖叫",@"title",@"给同事演示如何吓小孩尖叫",@"content",@"2",@"id",@"task",@"type",@"苏利文",@"author",@"2012-2-5",@"createTime",@"未完成",@"status",@"王军",@"cc",@"",@"tags",@"Marshal",@"addUser",nil]];
-         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"找到阿布回家的门",@"title",@"和大眼怪一起找到阿布回家的门",@"content",@"3",@"id",@"task",@"type",@"大眼怪迈克",@"author",@"2012-2-4",@"createTime",@"未完成",@"status",@"王军",@"cc",@"",@"tags",@"Marshal",@"addUser",nil]];
-         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"送阿布回家",@"title",@"送阿布回家",@"content",@"4",@"id",@"task",@"type",@"大眼怪迈克",@"author",@"2012-2-4",@"createTime",@"未完成",@"status",@"王军",@"cc",@"",@"tags",@"Marshal",@"addUser",nil]];
-         [activities addObject:[[NSMutableDictionary alloc] initWithObjectsAndKeys:@"逗小孩欢笑发电",@"title",@"逗小孩欢笑发电",@"content",@"5",@"id",@"task",@"type",@"大眼怪迈克",@"author",@"2012-2-4",@"createTime",@"未完成",@"status",@"王军",@"cc",@"",@"tags",@"Marshal",@"addUser",nil]];
+        HttpRequest *httpRequest=[[HttpRequest alloc] init];
+        NSError *error;
+        [activities addObjectsFromArray:[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error]];
     }
     return self;
 }
@@ -61,6 +59,26 @@
 }
 -(BOOL)checkName:(NSString *)userName password:(NSString *)password
 {
+    if ([userName isEqual:@"Sullivan"]&&[password isEqual:@"password"]) {
+        [self saveName:userName password:password];
+    }else{
+        [self emptyUserinfo];
+    }
     return [userName isEqual:@"Sullivan"]&&[password isEqual:@"password"];
+}
+-(void)saveName:(NSString *)userName password:(NSString *)password
+{
+    NSDictionary *userinfo=[NSDictionary dictionaryWithObjectsAndKeys:userName,@"userName",password,@"password", nil];
+    [[NSUserDefaults standardUserDefaults] setObject:userinfo forKey:@"userInfo"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+-(void)emptyUserinfo
+{
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"userInfo"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+-(NSDictionary *)getUserInfo
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:@"userInfo"];
 }
 @end

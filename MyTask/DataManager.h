@@ -18,4 +18,11 @@
 -(void)deleteActivity:(id)activity;
 
 -(BOOL)checkName:(NSString *)userName password:(NSString *)password;
+
+-(void)saveName:(NSString *)userName password:(NSString *)password;
+
+-(void)emptyUserinfo;
+
+-(NSDictionary *)getUserInfo;
+
 @end

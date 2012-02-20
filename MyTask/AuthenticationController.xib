@@ -131,7 +131,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 193}, {280, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:225</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -204,7 +203,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-</object>
+				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
 					<object class="IBUINavigationController" id="145554480">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="806737906">
@@ -402,7 +401,6 @@
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSNextKeyView"/>
 					<string key="NSReuseIdentifierKey">_NS:473</string>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
