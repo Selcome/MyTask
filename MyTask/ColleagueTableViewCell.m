@@ -27,11 +27,21 @@
 }
 -(void)onShowCell:(NSDictionary *)dir
 {
+    currentDic=dir;
     [nameLable setText:[dir objectForKey:@"name"]];
     [timeLable setText:[dir objectForKey:@"phone"]];
-    
-    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:[dir objectForKey:@"image"]]];
+    [NSThread detachNewThreadSelector:@selector(loadimage:) toTarget:self withObject:dir];
+}
+-(void)loadimage:(NSDictionary *)dic
+{
+    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:[dic objectForKey:@"image"]]];
     UIImage *img=[UIImage imageWithData:data];
-    [iconImageView setImage:img];
+    if ([currentDic isEqualToDictionary:dic]) {
+       [self performSelectorOnMainThread:@selector(changeImageStatus:) withObject:img waitUntilDone:YES]; 
+    }
+}
+-(void)changeImageStatus:(UIImage *)image
+{
+    [iconImageView setImage:image];
 }
 @end

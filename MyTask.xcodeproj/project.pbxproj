@@ -53,6 +53,7 @@
 		2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8E614E2535C0092DD10 /* task_small.png */; };
 		2CDB713F14F2287500C50625 /* colleague.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB713E14F2287500C50625 /* colleague.sqlite */; };
 		2CDB714714F228CF00C50625 /* OperationalDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB714614F228CE00C50625 /* OperationalDatabase.m */; };
+		2CDB715114F2353900C50625 /* user_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB715014F2353900C50625 /* user_default.png */; };
 		F3FBE92814D79B2800CF86BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92714D79B2800CF86BA /* UIKit.framework */; };
 		F3FBE92A14D79B2800CF86BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92914D79B2800CF86BA /* Foundation.framework */; };
 		F3FBE92C14D79B2800CF86BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FBE92B14D79B2800CF86BA /* CoreGraphics.framework */; };
@@ -139,6 +140,7 @@
 		2CDB714414F228CE00C50625 /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
 		2CDB714514F228CE00C50625 /* OperationalDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationalDatabase.h; sourceTree = "<group>"; };
 		2CDB714614F228CE00C50625 /* OperationalDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationalDatabase.m; sourceTree = "<group>"; };
+		2CDB715014F2353900C50625 /* user_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_default.png; sourceTree = "<group>"; };
 		F3FBE92314D79B2800CF86BA /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FBE92714D79B2800CF86BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3FBE92914D79B2800CF86BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -261,6 +263,7 @@
 		2CE4629A14E4064E0007B2E1 /* colleague */ = {
 			isa = PBXGroup;
 			children = (
+				2CDB715014F2353900C50625 /* user_default.png */,
 				2CDB714414F228CE00C50625 /* SQL.h */,
 				2CDB714514F228CE00C50625 /* OperationalDatabase.h */,
 				2CDB714614F228CE00C50625 /* OperationalDatabase.m */,
@@ -493,6 +496,7 @@
 				2C34F24514F20CED0089B39E /* calendar.html in Resources */,
 				2C34F24C14F210F60089B39E /* CalendarController.xib in Resources */,
 				2CDB713F14F2287500C50625 /* colleague.sqlite in Resources */,
+				2CDB715114F2353900C50625 /* user_default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
