@@ -14,15 +14,27 @@
 - (id)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-//        //使用plist 
-//        NSString *filename= [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"colleague.plist"]; 
-//        //读文件
-//        colleagueArray= [[NSDictionary dictionaryWithContentsOfFile:filename] objectForKey:@"colleague"];
+        self.navigationItem.title=@"同事";
+        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(onClickEditButton:)];
+        self.navigationItem.rightBarButtonItem=anotherButton;
         colleagueArray=[[OperationalDatabase defaultManager] getColleagueArray];
     }
     return self;
 }
-
+-(void)onClickEditButton:(id)sender
+{
+    [rootTableView setEditing:YES];
+    
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(onClickSaveButton:)];
+    self.navigationItem.rightBarButtonItem=anotherButton;
+}
+-(void)onClickSaveButton:(id)sender
+{
+    [rootTableView setEditing:NO];
+    
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(onClickEditButton:)];
+    self.navigationItem.rightBarButtonItem=anotherButton;
+}
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -74,5 +86,24 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 71;
+}
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath 
+{ 
+    return UITableViewCellEditingStyleNone; 
+} 
+-(BOOL)tableView:(UITableView *) tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //打开编辑
+    return YES;
+}
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //允许移动
+    return YES;
+}
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    //交换数据
+    
 }
 @end
