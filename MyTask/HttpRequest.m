@@ -53,13 +53,17 @@
 // 网络错误时触发
 - (void)connection:(NSURLConnection *)aConn didFailWithError:(NSError *)error
 {
-    requestData=nil;
+    [self performSelectorOnMainThread:@selector(setError) withObject:nil waitUntilDone:NO];
     [self performSelectorOnMainThread:@selector(setEnd) withObject:nil waitUntilDone:NO];
 }
 // 全部数据接收完毕时触发
 - (void)connectionDidFinishLoading:(NSURLConnection *)aConn
 {
     [self performSelectorOnMainThread:@selector(setEnd) withObject:nil waitUntilDone:NO];
+}
+-(void)setError
+{
+ requestData=nil;
 }
 -(void)setEnd{
     endRequest=YES;

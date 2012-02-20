@@ -35,6 +35,7 @@
     asyncImageView.tag=[[dir objectForKey:@"id"] intValue];
     asyncImageView.delegate=self;
     [asyncImageView loadImageFromURL:[NSURL URLWithString:[dir objectForKey:@"image"]]];
+   
 }
 
 -(void)getImageSuccess:(UIImage *)image tag:(NSNumber *)tag

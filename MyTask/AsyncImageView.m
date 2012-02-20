@@ -6,32 +6,39 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 #import "AsyncImageView.h"
-#import "HttpRequest.h"
 @implementation AsyncImageView
-@synthesize delegate,tag;
+@synthesize tag,delegate;
 - (void)loadImageFromURL:(NSURL*)url {
     if(url!=nil&&![url isEqual:@""]) {
-        if ([self isExistsFile:[url description]]) {
-            //返回数据 
-            if ([delegate respondsToSelector:@selector(getImageSuccess:tag:)]) {
-                [delegate performSelector:@selector(getImageSuccess:tag:) withObject:[self getImage:[url description]] withObject:[NSNumber numberWithInt:self.tag]];
+        if ([self isExistsFile:[url relativePath]]) {
+            UIImage *image=[self getImage:[url relativePath]];
+            if (image!=nil) {
+                if ([delegate respondsToSelector:@selector(getImageSuccess:tag:)]) {
+                    [delegate getImageSuccess:image tag:[NSNumber numberWithInt:tag]];
+                }
             }
         }else{
-            HttpRequest *httpRequest=[[HttpRequest alloc] init];
-            NSData *imageData=[httpRequest getGETRequest:[url absoluteString]];
-            if (imageData) {
-                [self writeDataToFile:[urls description] fileData:imageData];
-                UIImage *image=[UIImage imageWithData:imageData];
-                if ([delegate respondsToSelector:@selector(getImageSuccess:tag:)]) {
-                    [delegate performSelector:@selector(getImageSuccess:tag:) withObject:image withObject:[NSNumber numberWithInt:self.tag]];
-                }    
-            }else{
-                if ([delegate respondsToSelector:@selector(getImageFail:tag:)]) {
-                    [delegate performSelector:@selector(getImageFail:tag:) withObject:nil withObject:[NSNumber numberWithInt:self.tag]];
-                }   
-            }
+            urls=url;
+            NSURLRequest* request = [NSURLRequest requestWithURL:url];
+            connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:YES];
         }
     }
+}
+//the URL connection calls this repeatedly as data arrives
+- (void)connection:(NSURLConnection *)theConnection didReceiveData:(NSData *)incrementalData {
+	if (data==nil) { data = [[NSMutableData alloc] initWithCapacity:2048]; } 
+	[data appendData:incrementalData];
+}
+//the URL connection calls this once all the data has downloaded
+- (void)connectionDidFinishLoading:(NSURLConnection*)theConnection {
+    if ([UIImage imageWithData:data]!=nil) {
+        UIImage *image=[UIImage imageWithData:data];
+        if ([delegate respondsToSelector:@selector(getImageSuccess:tag:)]) {
+            [delegate getImageSuccess:image tag:[NSNumber numberWithInt:tag]];
+        }
+        [self writeDataToFile:[urls relativePath] fileData:data];
+    }
+	data=nil;
 }
 -(BOOL)isExistsFile:(NSString *)filepath
 {

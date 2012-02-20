@@ -7,7 +7,8 @@
 //
 
 #import "AboutController.h"
-
+#import "HttpRequest.h"
+#define jsonUrl @"http://marcuswang.github.com/MyTaskServer/about.json"
 @implementation AboutController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,14 +28,16 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    textView.text=@"  怪物公司  \n  怪物公司创建于...";
+    HttpRequest *httpRequest=[[HttpRequest alloc] init];
+    NSError *error;
+    NSDictionary *dir=[NSJSONSerialization JSONObjectWithData:[httpRequest getGETRequest:jsonUrl] options:kNilOptions error:&error];
+    textView.text=[dir objectForKey:@"about"];
 }
 
 - (void)viewDidUnload
