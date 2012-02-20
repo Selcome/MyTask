@@ -95,6 +95,8 @@
         case 4:
         {
             NSLog(@"我的任务");
+            ActivityController *activityController=[[ActivityController alloc] initWithNibName:@"ActivityController" bundle:nil];
+            [self.navigationController pushViewController:activityController animated:YES];
             break;
         }
         case 5:

@@ -33,6 +33,8 @@
 		2C56055014F143F000F6FDFC /* colleague.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C56054F14F143F000F6FDFC /* colleague.plist */; };
 		2C56055D14F1454300F6FDFC /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56055B14F1454300F6FDFC /* HomeController.m */; };
 		2C56055E14F1454300F6FDFC /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C56055C14F1454300F6FDFC /* HomeController.xib */; };
+		2C5605A114F1ECC800F6FDFC /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C56059F14F1ECC800F6FDFC /* AboutController.m */; };
+		2C5605A214F1ECC800F6FDFC /* AboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C5605A014F1ECC800F6FDFC /* AboutController.xib */; };
 		2C61DC8214EBAE8E00F50200 /* ColleagueController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */; };
 		2C61DC8314EBAE8E00F50200 /* ColleagueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */; };
 		2C61DC8914EBB3D900F50200 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC8714EBB3D900F50200 /* SettingViewController.m */; };
@@ -41,7 +43,6 @@
 		2C61DC9A14EBF63F00F50200 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C61DC9C14EBF63F00F50200 /* SearchController.m */; };
 		2C9BB3D814F0E84900290A3C /* sullivan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BB3CE14F0E84900290A3C /* sullivan.png */; };
 		2CAE5BFF14ED36CE0041D5B5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */; };
-		2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB81B5714E23B4900BA77C0 /* mytask.sqlite */; };
 		2CB81B5B14E23B6600BA77C0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */; };
 		2CDAE8DD14E2517E0092DD10 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */; };
 		2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDAE8DE14E2518B0092DD10 /* ActivityTableViewCell.xib */; };
@@ -104,6 +105,9 @@
 		2C56055A14F1454300F6FDFC /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		2C56055B14F1454300F6FDFC /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		2C56055C14F1454300F6FDFC /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		2C56059E14F1ECC800F6FDFC /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		2C56059F14F1ECC800F6FDFC /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		2C5605A014F1ECC800F6FDFC /* AboutController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutController.xib; sourceTree = "<group>"; };
 		2C61DC7C14EBAE8E00F50200 /* ColleagueController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColleagueController.xib; sourceTree = "<group>"; };
 		2C61DC7D14EBAE8E00F50200 /* ColleagueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColleagueController.m; sourceTree = "<group>"; };
 		2C61DC7E14EBAE8E00F50200 /* ColleagueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColleagueController.h; sourceTree = "<group>"; };
@@ -116,7 +120,6 @@
 		2C61DCA314EBF67E00F50200 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SearchController.xib"; sourceTree = "<group>"; };
 		2C9BB3CE14F0E84900290A3C /* sullivan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sullivan.png; sourceTree = "<group>"; };
 		2CAE5BFC14ED36B40041D5B5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		2CB81B5714E23B4900BA77C0 /* mytask.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mytask.sqlite; sourceTree = "<group>"; };
 		2CB81B5A14E23B6600BA77C0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2CDAE8DB14E2517E0092DD10 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
 		2CDAE8DC14E2517E0092DD10 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
@@ -194,6 +197,9 @@
 				2C61DC8614EBB3D900F50200 /* SettingViewController.h */,
 				2C61DC8714EBB3D900F50200 /* SettingViewController.m */,
 				2C61DC8814EBB3D900F50200 /* SettingViewController.xib */,
+				2C56059E14F1ECC800F6FDFC /* AboutController.h */,
+				2C56059F14F1ECC800F6FDFC /* AboutController.m */,
+				2C5605A014F1ECC800F6FDFC /* AboutController.xib */,
 			);
 			name = setting;
 			sourceTree = "<group>";
@@ -262,7 +268,6 @@
 			children = (
 				2C56050814F1405B00F6FDFC /* DataManager.h */,
 				2C56050914F1405B00F6FDFC /* DataManager.m */,
-				2CB81B5714E23B4900BA77C0 /* mytask.sqlite */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -434,7 +439,6 @@
 				F3FBE94D14D7D3D200CF86BA /* AuthenticationController.xib in Resources */,
 				F3FBE95314D7DA3D00CF86BA /* logo.png in Resources */,
 				F3FBE9D614DAE1CA00CF86BA /* ActivityController.xib in Resources */,
-				2CB81B5814E23B4900BA77C0 /* mytask.sqlite in Resources */,
 				2CDAE8DF14E2518B0092DD10 /* ActivityTableViewCell.xib in Resources */,
 				2CDAE8E514E253460092DD10 /* posted_small.png in Resources */,
 				2CDAE8E714E2535C0092DD10 /* task_small.png in Resources */,
@@ -456,6 +460,7 @@
 				2C56054814F1436C00F6FDFC /* mytask.plist in Resources */,
 				2C56055014F143F000F6FDFC /* colleague.plist in Resources */,
 				2C56055E14F1454300F6FDFC /* HomeController.xib in Resources */,
+				2C5605A214F1ECC800F6FDFC /* AboutController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +491,7 @@
 				2C56051314F140CF00F6FDFC /* AddFavoritesController.m in Sources */,
 				2C56051814F140F800F6FDFC /* pinyin.c in Sources */,
 				2C56055D14F1454300F6FDFC /* HomeController.m in Sources */,
+				2C5605A114F1ECC800F6FDFC /* AboutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
